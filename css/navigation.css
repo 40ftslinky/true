@@ -196,14 +196,13 @@ a:hover svg.logo_svg path {
         gap: 2rem;
     }
     .menu_item-sub {
-        /* flex: 30%; */
+        flex: 30%;
         margin: 0 auto;
     }
     .menu_item-sub a {
         display: inline-flexbox;
     }
-    .menu_dropdown-wrap a:hover,
-    .menu_item-sub a:hover {
+    .menu_item-sub:hover {
         background: white;
     }
 
@@ -238,8 +237,8 @@ a:hover svg.logo_svg path {
         content: '';
         background-size: contain;
         background-repeat: no-repeat;
-        /* left: 17px; */
-        left: 0;
+        left: 17px;
+        /* left: 0; */
         width:20px;
         height: 20px;
         position: absolute;
@@ -620,9 +619,9 @@ dropdown */
             margin-bottom: 0;
             /* height:var(--menu_item-height) */
         }
-        , 
+        
         .menu_item-sub .menu-link {
-            padding:0;}
+            padding:0;
         }
         .menu_item-sub {
             /* padding: 0.5rem 0; */
