@@ -1,0 +1,186 @@
+/* footer */
+
+
+
+
+/*  =======================================
+    FOOTER
+    =================================== */
+
+    footer, .footer {
+        background-color: var(--main-black);
+        color: white;
+        padding: 5rem 0;
+        margin-top: 5rem;    
+    }
+
+    .footer_wrapper {
+        margin: 0 auto;
+        max-width: 1440px;
+        width: 75vw;
+    }
+    @media screen and (max-width: 67.5em){
+        .footer_wrapper {
+            /* width: 100%; */
+            width: calc(100% - 4rem);
+            margin: 0 auto;
+        }
+    }
+
+    .footer_cols_wrapper {
+        display: flex;
+        align-content: flex-start;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 3%;
+    }
+    .footer_cols_wrapper {
+        /* justify-content: space-between; */
+    }
+
+    .footer div[class*="col_"]:first-of-type {
+        max-width: 200px;
+    }
+    .footer div[class*="col_"] {
+        display: inline-block;
+        width: fit-content;
+        /* max-width: 250px; */
+        /* margin-right: 3rem; */
+    }
+    .footer div[class*="col_"]:last-of-type {
+        /* margin: 0 0 0 calc(80vw - (700px + 9rem + 90px )); */
+        min-width: 30%;
+        max-width: unset;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap !important;
+        /* gap: 5%; */
+        margin-right: 0;
+    }
+    .footer div[class*="col_"]:nth-of-type(3) {
+        min-width: 300px;
+        max-width: unset;
+    }
+
+
+    @media screen and (max-width: 80em) {
+        .footer div[class*="col_"]:last-of-type {
+            margin-left:0;
+        }
+    }
+    @media screen and (max-width: 64em) {
+        
+        .footer div[class*="col_"], 
+        .footer div[class*="col_"]:first-of-type { }
+         
+
+        .footer div[class*="col_"]:nth-of-type(3) 
+        {
+            margin-right: 0;
+        }
+        .footer div[class*="col_"]:last-of-type 
+        {
+            
+        }
+    }
+    @media screen and (max-width: 48em) {
+        .footer div[class*="col_"],
+        .footer div[class*="col_"]:first-of-type,
+        .footer div[class*="col_"]:last-of-type {
+            width:50%;
+        }
+    }
+
+    @media screen and (max-width: 40em) {
+        .footer div[class*="col_"],
+        .footer div[class*="col_"]:first-of-type,
+        .footer div[class*="col_"]:last-of-type {
+            width:100%;
+        }
+    }
+
+    .footer_menu_wrap {
+        width: 45%;
+    }
+
+    @media screen and (max-width: 64em) {
+        .footer_menu_wrap {
+            /* width: 33%; */
+        }
+
+    }
+
+/* logo */
+/*  ======================================= */
+
+    .footer_logo { 
+        display: inline-block;
+        width:80px;
+    }
+
+    svg.footer_logo_svg path {
+        fill:rgba(255,255,255,1);
+        -webkit-transition: all .25s ease-out;
+        -moz-transition: all .25s ease-out;
+        -o-transition: all .25s ease-out;
+        transition: all .25s ease-out;    
+    }
+
+
+    a:hover svg.footer_logo_svg path {
+        fill:rgba(255,255,255,0.75);    
+    }
+
+    .footer h6 {
+        color: var(--main-color);
+        font-family: var(--font-family-header);
+        font-size: 13px;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    .footer h6 { 
+        text-transform: uppercase;
+    }
+
+    .footer div[class*="col_"]:nth-of-type(3) h6 { 
+        margin-bottom: 2rem;
+    }
+
+
+    .footer p, .footer a, .footer li {
+        color: white;
+        font-family: var(--font-family);
+    }
+
+    .footer p {
+        margin-bottom: 1rem;
+    }
+
+    .footer p, .footer a, .footer li { 
+        font-size: 13px;
+    }
+
+    .footer li {
+        font-size: 11px;
+    }
+
+
+/* col 03 */
+
+/* _forms.css */
+
+/* col 04 */
+/*  ======================================= */
+
+
+    .footer ul {
+        text-indent: 0;
+        list-style: none;
+    }
+    .footer li {
+        margin: 0 0 0 -2.5rem;
+    }
+    .footer li a {}

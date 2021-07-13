@@ -1,0 +1,102 @@
+
+/*  =======================================
+    FORM
+    =================================== */
+
+    #form.form {
+        box-sizing: border-box;
+    }
+
+    #form .form_row {
+        position: relative;
+        margin-bottom: 2rem;
+    }
+
+    #form label, #form input {
+        display: block;
+        width:100%;
+    }
+
+
+    #form label {
+        color: white;
+        font-family: var(--font-family);
+        font-size: 13px;
+        margin-top: 1rem;
+        transform: scale(1);
+        transform-origin: left;
+        transition: all 0.2s ease-in-out;
+    }
+
+    #form input[type="text"],
+    #form input[type="email"],
+    #form input[name="message"] {
+        width: 100%;
+        padding: 0.5rem 1rem;
+        font-size: 1rem;
+        line-height: inherit;
+        letter-spacing: .2;
+        color: white;
+        font-family: var(--font-family);
+        border: none;
+        box-sizing: border-box;
+        /* background:transparent; */
+        border-bottom:2px solid rgba(106,198,183,.8);
+        background: rgba(0, 0, 0, 0);
+        transition: all 0.2s ease-in-out;
+        border-radius: unset;
+    }
+
+    #form input + label {
+        position: absolute;
+        left: 0;
+        top:0;
+        transform: scale(1);
+        transition: all 0.2s ease-in-out;
+        /* You have to use this to make it clickable through*/
+        pointer-events: none;
+    }
+
+    #form input[type="email"]:focus, 
+    #form input[type="number"]:focus, 
+    #form input[type="search"]:focus, 
+    #form input[type="text"]:focus, 
+    #form input[type="tel"]:focus, 
+    #form input[type="url"]:focus, 
+    #form input[type="password"]:focus, 
+    #form textarea:focus, 
+    #form select:focus {
+        border: none;
+        outline: 0;
+        background: var(--main-color-30);
+        /* background: var(--vlight_grey); */
+        border-bottom:2px solid var(--main-color-50);
+        outline: none;
+    }
+
+    #form select:focus-within + label,
+    #form input:focus-within + label,
+    #form textarea:focus-within + label,
+    #form input[type="text"]:focus + label,
+    #form input[type="email"]:focus + label,
+    #form input[name="message"]:focus + label,
+    #form input[type="text"]:focus-within + label, 
+    #form input[type="email"]:focus-within + label,
+    #form input[name="message"]:focus-within + label,
+    #form input:not(:placeholder-shown) + label { /* placeholder needs to have something in it - a space will do eg: placeholder=" " */
+
+        /* font-size: 0.7em; */
+        color: var(--not-white);
+        font-weight: 400;
+        transform: scale(0.8);
+        top: -37px;
+        /* Use "Translate" function instead of classic positioning for better performance */
+        /* transform: translateY(-3em); */
+    }
+
+    #form input:focus {
+        background: var(--main-color-30);
+        border-bottom:2px solid var(--main-color);
+        outline: none;
+    }
+
