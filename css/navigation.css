@@ -205,7 +205,12 @@ a:hover svg.logo_svg path {
     .menu_item-sub:hover {
         background: white;
     }
-
+    .menu_item.menu_cta:hover { 
+        border: none;
+    }
+    .menu_item.menu_cta a {
+        padding: 0.75rem 1rem 0.7rem;
+    }
 }
 
 .menu_item-sub a {
