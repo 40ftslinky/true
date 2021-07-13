@@ -3,12 +3,11 @@
    TRU custom styles
    ========================================================================== */
 
-    @import "_colours.css";
-    @import "_typography.css";
-    @import "_navigation.css";
-    /* @import "_header.css"; */
-    @import "_footer.css";
-    @import "_form.css";
+    @import "colours.css";
+    @import "typography.css";
+    @import "navigation.css";
+    @import "footer.css";
+    @import "form.css";
 
 
     :root {
