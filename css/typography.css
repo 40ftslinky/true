@@ -31,8 +31,8 @@
     --text-col:#2B2E34;
     --font-family: "Helvetica",Arial,"Noto Sans",sans-serif;
     --font-family-header: "AktivGrotesk-Bold",Arial,"Noto Sans",sans-serif;
-    /* --font-family-link: "Helvetica-Bold",Arial,"Noto Sans",sans-serif; */
-    --font-family-link: "AktivGrotesk-Bold",Arial,"Noto Sans",sans-serif;
+    /* --font-link: "Helvetica-Bold",Arial,"Noto Sans",sans-serif; */
+    --font-link: "AktivGrotesk-Bold",Arial,"Noto Sans",sans-serif;
     /*  */
     --font-family-Aktiv: "AktivGrotesk",Arial,"Noto Sans",sans-serif;
 }
@@ -45,12 +45,13 @@
 
 p {
     font-family: var(--font-family);
+    font-size: 19px;
 }
 
-a, .link, .btn {
+a, .link, .btn, button {
     text-decoration: none;
     color: var(--text-col);
-    font-family: var(--font-family-link);
+    font-family: var(--font-link);
     font: 800;
 }
 
@@ -82,13 +83,14 @@ h2, h3, h4, h5, h6 {
 }
 
 .h1, h1 {
-    font-size: 66px;
+    font-size:calc(16px + (90 - 16) * ((100vw - 360px) / 1440));
+    font-size: clamp(16px, calc(16px + (90 - 16) * ((100vw - 360px) / 1440)), 90px);
     /* line-height: .833333; */
     line-height: 1.1;
 }
 @media screen and (max-width: 64em) {
     .h1, h1 {
-        font-size: 48px;
+        /* font-size: 48px; */
     }
 }
 
@@ -96,21 +98,60 @@ h1, h1.hero_title {
     margin-bottom: 0.5rem;
 }
 
+/* 
+h2.case_study_title {
+    font-size: 53px;
+    line-height: 1.1;
+    max-width: 60%;
+}
+.case_study .subtitle {
+    margin: 1.5rem 0;
+    font-size: 19px;
+    line-height: 1.25;
+} 
+*/
+h2.case_study_title {
+    max-width: 60%;
+    font-size:calc(16px + (40 - 16) * ((100vw - 360px) / 1440));
+    font-size: clamp(16px, calc(16px + (40 - 16) * ((100vw - 360px) / 1440)), 40px);
+    line-height: 1.1;
+}
+
+.case_study .subtitle {
+    margin: 2.5rem 0;
+    line-height: 1.25;
+    font-size:calc(16px + (19 - 16) * ((100vw - 360px) / 1440));
+    font-size: clamp(16px, calc(16px + (19 - 16) * ((100vw - 360px) / 1440)), 19px);
+
+} 
+
+@media screen and (max-width: 64em) {
+    /* h2.case_study_title {
+        font-size: 32px;
+    } */
+}
 
 .h2, h2 {
     font-size: 52px;
+    font-size:calc(16px + (60 - 16) * ((100vw - 360px) / 1440));
+    font-size: clamp(16px, calc(16px + (60 - 16) * ((100vw - 360px) / 1440)), 60px);
 }
+
 h2.article_title {
     margin: 0 0 1rem;
 }
 
 .h3, h3 {
     font-size: 34px;
+    font-size:calc(16px + (30 - 16) * ((100vw - 360px) / 1440));
+    font-size: clamp(16px, calc(16px + (30 - 16) * ((100vw - 360px) / 1440)), 30px);
 }
 
 
 .h4, h4 {
     font-size: 24px;
+    font-size:calc(16px + (24 - 16) * ((100vw - 360px) / 1440));
+    font-size: clamp(16px, calc(16px + (24 - 16) * ((100vw - 360px) / 1440)), 24px);
 }
 
 h4.category {
@@ -132,7 +173,8 @@ h4.category {
 }
 
 .feature_wrap .subtitle, 
-.feature_wrap .article_title {
+.feature_wrap .article_title,
+.case_study_title {
     color: #ffffff;
 }
 

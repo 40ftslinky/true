@@ -182,7 +182,7 @@ a:hover svg.logo_svg path {
     padding: 1rem 0;
 }
 .menu-link span{
-    font-family: var(--font-family-link);   
+    font-family: var(--font-link);   
 }
 
 @media only screen and (min-width: 881px){
@@ -206,10 +206,11 @@ a:hover svg.logo_svg path {
         background: white;
     }
     .menu_item.menu_cta:hover { 
-        border: none;
+        border-color: transparent;
     }
     .menu_item.menu_cta a {
         padding: 0.75rem 1rem 0.7rem;
+        font-family: var(--font-link);
     }
 }
 
