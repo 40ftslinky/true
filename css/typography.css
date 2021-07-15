@@ -40,7 +40,6 @@
 * {
     font-family: var(--font-family-Aktiv);
     line-height: 1.5;
-    letter-spacing: -0.2;
 }
 
 p {
@@ -64,12 +63,9 @@ a:hover {
 h1, h2, h3, h4, h5, h6 {
     color: var(--text-col);
     text-transform: none !important;
-}
-
-.h1, .h2, .h3, .h4, .h5, .h6, 
-h1, h2, h3, h4, h5, h6 {
     font-family: var(--font-family-header);
     font-weight: 800;
+    letter-spacing: -0.4px;
 }
 .h2, .h3, .h4, .h5, .h6, 
 h2, h3, h4, h5, h6 {
@@ -125,6 +121,14 @@ h2.case_study_title {
 
 } 
 
+.case_study .subtitle {
+    margin: 2.5rem 0;
+    line-height: 1.25;
+    font-size:calc(16px + (19 - 16) * ((100vw - 360px) / 1440));
+    font-size: clamp(16px, calc(16px + (19 - 16) * ((100vw - 360px) / 1440)), 19px);
+
+} 
+
 @media screen and (max-width: 64em) {
     /* h2.case_study_title {
         font-size: 32px;
@@ -133,8 +137,8 @@ h2.case_study_title {
 
 .h2, h2 {
     font-size: 52px;
-    font-size:calc(16px + (60 - 16) * ((100vw - 360px) / 1440));
-    font-size: clamp(16px, calc(16px + (60 - 16) * ((100vw - 360px) / 1440)), 60px);
+    font-size:calc(16px + (52 - 16) * ((100vw - 360px) / 1440));
+    font-size: clamp(16px, calc(16px + (52 - 16) * ((100vw - 360px) / 1440)), 52px);
 }
 
 h2.article_title {
@@ -142,7 +146,7 @@ h2.article_title {
 }
 
 .h3, h3 {
-    font-size: 34px;
+    font-size: 30px;
     font-size:calc(16px + (30 - 16) * ((100vw - 360px) / 1440));
     font-size: clamp(16px, calc(16px + (30 - 16) * ((100vw - 360px) / 1440)), 30px);
 }
@@ -189,6 +193,12 @@ h5.type {
     font-size: 16px;
     font-weight: 400 !important;
     margin-top: 1rem;
+}
+
+h5.cs_type {
+    font-size: 30px;
+    font-size:calc(16px + (30 - 16) * ((100vw - 360px) / 1440));
+    font-size: clamp(16px, calc(16px + (30 - 16) * ((100vw - 360px) / 1440)), 30px);
 }
 
 h6 {text-transform: uppercase;}
