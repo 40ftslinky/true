@@ -279,6 +279,10 @@
         /* display: none !important; */
     }
 
+    .case_study_brand_wrap.state_off {
+        visibility: hidden;
+    }
+
 /*  =======================================
     FEATURES
     =================================== */
