@@ -6,6 +6,9 @@ jQuery(document).ready(function( $ ) {
     //     $("div.state_off").addClass("state_on");
     //     $("div.state_on").removeClass("state_on").addClass("state_off");
     // });
+    $(".case_study_brand_wrap.state_off").fadeOut();
+    $(".case_study_brand_wrap.state_off").css("visibility", "visible")
+
 
     $(".swap_state_on").click(function(){
         $("div.state_on").fadeOut();
