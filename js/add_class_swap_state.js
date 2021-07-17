@@ -1,11 +1,7 @@
 // .swap_state onclick add class state_on state_off .js
 
 jQuery(document).ready(function( $ ) {
-        
-    // $(".swap_state").on("click", function() {
-    //     $("div.state_off").addClass("state_on");
-    //     $("div.state_on").removeClass("state_on").addClass("state_off");
-    // });
+
     $(".case_study_brand_wrap.state_off").fadeOut();
     $(".case_study_brand_wrap.state_off").css("visibility", "visible")
 

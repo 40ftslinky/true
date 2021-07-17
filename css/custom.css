@@ -265,20 +265,17 @@
     }
 
 
-
+    /* requires add_class_swap_state.js to work */
     .state_on { 
         position: absolute;
         z-index: 11; 
-        /* display: block !important; */
     }
     .state_off {
         z-index: 1; 
-        /* opacity: 0; */
-        /* visibility: hidden;  */
-        /* z-index: -1; */
-        /* display: none !important; */
     }
 
+    /* NOTE */
+    /* improves pre js load render */
     .case_study_brand_wrap.state_off {
         visibility: hidden;
     }
