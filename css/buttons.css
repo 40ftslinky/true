@@ -1,3 +1,34 @@
+/*  =======================================
+    BUTTON COLOURS
+    =================================== */
+
+:root {
+    /* buttons */
+    --pink:#E78C9B;
+    --green: #00C4C2;
+    --lime: #AFD3AB;
+    --blue: #189ADB;
+    /*  */
+    --pink-hv:#A4646C;
+    --green-hv: #008380;
+    --lime-hv: #697B66;
+    --blue-hv: #147EB3;
+}
+
+.pink-txt { color:var(--pink); }
+.green-txt { color:var(--green); }
+.lime-txt { color:var(--lime); }
+.blue-txt { color:var(--blue); } 
+
+.pink-txt:hover,
+.green-txt:hover,
+.lime-txt:hover,
+.blue-txt:hover { color:white; }
+
+.pink-OL-txt:hover { color:var(--pink-hv); }
+.green-OL-txt:hover { color:var(--green-hv); }
+.lime-OL-txt:hover { color:var(--lime-hv); } 
+.blue-OL-txt:hover { color:var(--blue-hv); } 
 
 
 /*  =======================================
@@ -77,4 +108,3 @@
             width: 100%;
         }
     }
-
