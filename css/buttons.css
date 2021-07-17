@@ -35,7 +35,7 @@
     BUTTONS
     =================================== */
 
-    .btn, button {   
+    .btn, button, .video-btn {   
         position: relative;
         z-index: 1;
         margin-left: 0;
@@ -106,5 +106,6 @@
     @media screen and (max-width: 30em) {
         .btn, button {   
             width: 100%;
+            max-width: 320px;
         }
     }
