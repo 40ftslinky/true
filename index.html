@@ -201,29 +201,49 @@
       
       <article class="article case_study">
         <div class="case_study_wrap">
-          <div class="case_study_img_wrap">
+
+          <!-- start visible -->
+          <div class="case_study_img_wrap state_on">
             <img class="case_study_img" src="img/Hydralyte_Landscape_V2.jpg" alt="">
           </div>
+          
+          <!-- start hidden -->
+          <div class="case_study_img_wrap state_off">
+            <img class="case_study_img" src="img/McVities_Landscape_V3.jpg" alt="">
+          </div>
+
           <div class="case_study_text_wrap">
-            <header>
+            <div>
               <h2 class="case_study_title">
                 Growth is not elusive. Increased performance requires a deep understanding of the customer and their journey along with a distinctive brand position and captivating brand narratives. 
               </h2>
-              
-              <button class="btn btn-white">Learn More</button>
-              <button class="btn btn-outline-white">Learn More</button>
-              
+
+              <!-- change state -->
+              <div class="btns_wrap">
+                <button class="btn btn-white green-txt swap_state_off">Digital</button>
+                <button class="btn btn-outline-white green-OL-txt swap_state_on">Creative</button>
+              </div>
+
               <p class="subtitle">Creative isn’t simply ads anymore. Brands need to create both advertising and content that delivers a shared value exchange between brand and consumer. Humour, inspiration, information are all fair exchanges of value.</p>
 
               <a class="more_link" href="#highlights"><div class="more_white"></div></a>
 
             </header>
             
-            <div class="case_study_brand_wrap">
+            <!-- start visible -->
+            <div class="case_study_brand_wrap state_on">
               <h3 class="case_study_brand">
                 Hydralyte
               </h3>
-              <button class="btn btn-outline-white">Learn More</button>
+              <button class="btn btn-outline-white green-OL-txt">Learn More</button>
+            </div>
+
+            <!-- start hidden -->
+            <div class="case_study_brand_wrap state_off">
+              <h3 class="case_study_brand">
+                McVities
+              </h3>
+              <button class="btn btn-outline-white blue-OL-txt">Learn More</button>
             </div>
 
           </div>
@@ -288,6 +308,10 @@
 
     </section> 
 
+    <!-- ... -->
+    <!-- CASE STUDY LEFT -->
+    <!-- ... -->
+
     <section id="case_study" class="one_col_feature case_study_feature">
       
       <article class="article cs_feature">
@@ -307,7 +331,7 @@
               <p class="cs_copy">This international 5K fun run needed to efficiently drive ticket sales to consumers across Australia and New Zealand. The challenge? People saw the event as a one-off activity, so repeat purchases were in jeopardy. </p>
             </header>
 
-            <button class="btn btn-white">View Case study</button>
+            <button class="btn btn-white pink-txt">View Case study</button>
 
           </div>
         </div>
@@ -316,21 +340,120 @@
       <!-- ... -->
     </section>
     
-  
+    <!-- ... -->
+    <!-- CASE STUDY RIGHT -->
+    <!-- ... -->
+
+    <section id="case_study" class="one_col_feature case_study_feature">
+      
+      <article class="article cs_feature_right">
+        <div class="cs_feature_wrap">
+          <div class="cs_feature_img_wrap">
+            <img class="cs_feature_img" src="./img/Petbarn_Landscape_v3.jpg" alt="">
+          </div>
+          <div class="cs_feature_text_wrap">
+            <header>
+              <h5 class="cs_type">
+                Case Study
+              </h5>
+              <h2 class="cs_title">
+                Petbarn
+              </h2>
+              <h3 class="cs_subtitle">$3.7m increase in sales</h3>
+              <p class="cs_copy">
+                This Summer campaign relied on ‘consistency of message’ across all channels to deliver sales and get behind their annual Tree of Hope Appeal. <br>
+                The challenge? Creating a campaign engaging enough to cut through the normal holiday hoopla.    </p>
+            </header>
+
+            <button class="btn btn-white lime-txt">View Case study</button>
+
+          </div>
+        </div>
+
+      </article>
+      <!-- ... -->
+    </section>
+
+      
     <!-- ... -->
     <!-- GROWTH -->
     <!-- ... -->
 
     <section id="growth">
-
+      
+      
       <div class="growth_text_wrap">
+        <h2 class="growth_title">Humble, but grateful</h2>
+        <p class="growth_copy">
+          True has helped some of Australia’s most well known brands grow their audience, revenue, share of voice and performance. We are obsessed with driving efficient growth through data and captivation brand narratives. 
+        </p>
+      </div>
+
+      <div class="growth_row_wrap">
+        <div class="grow_wrap">
+          <div class="grow_img" alt="">
+            <img src="./img/logos/sydneys_luna_park_logo.svg" />
+          </div>
+          <div class="grow_text_wrap">
+            <h4 class="grow_amount up_arrow">84%</h4>
+            <p class="grow_detail">increase attendance YOY</p>
+          </div>
+        </div>
+        <div class="grow_wrap">
+          <div class="grow_img" alt="">
+            <img src="./img/logos/moneyme_logo.svg" />
+          </div>
+          <div class="grow_text_wrap">
+            <h4 class="grow_amount up_arrow">179%</h4>
+            <p class="grow_detail"> to conversion target</p>
+          </div>
+        </div>
+        <div class="grow_wrap">
+          <div class="grow_img" alt="">
+            <img src="./img/logos/petbarn_logo.svg" />
+          </div>
+          <div class="grow_text_wrap">
+            <h4 class="grow_amount up_arrow">$3.7m</h4>
+            <p class="grow_detail">YoY increase in sales</p>
+          </div>
+        </div>
+        <div class="grow_wrap">
+          <div class="grow_img" alt="">
+            <img src="./img/logos/zeus_street_greek_logo.svg" />
+          </div>
+          <div class="grow_text_wrap">
+            <h4 class="grow_amount down_arrow">37%</h4>
+            <p class="grow_detail">reduction in CPE</p>
+          </div>
+        </div>
+        <div class="grow_wrap">
+          <div class="grow_img" alt="">
+            <img src="./img/logos/hydralyte_logo.svg" />
+          </div>
+          <div class="grow_text_wrap">
+            <h4 class="grow_amount up_arrow">24%</h4>
+            <p class="grow_detail">growth in sales YoY</p>
+          </div>
+        </div>
+        
+      </div>
+
+    </section>     
+  
+    <!-- ... -->
+    <!-- XX -->
+    <!-- ... -->
+
+    <section id="XX">
+
+      <div class="XX_text_wrap">
         <h1>Short header goes here</h1>
         <p>Iberum invelec uptaeriorat ulpa pra entur soloreptiam alibus Iberum invelec uptaeriorat ulpa pra entur soloreptiam alibus.</p>
       </div>
 
-      <div class="growth_img_wrap">
-        <div class="growth_wrap">
-          <img class="growth_img" src="" alt="">
+      <div class="XX_img_wrap">
+        <div class="XX_wrap">
+          <img class="XX_img" src="" alt="">
           
         </div>
       </div>
@@ -617,6 +740,7 @@
   crossorigin="anonymous"></script>
 <script src="js/add_class_shrink.js"></script>
 <script src="js/add_class_is_active.js"></script>
+<script src="js/add_class_swap_state.js"></script>
 <!-- <script src="js/add_class_mobile_sub_menu_is_dropped.js"></script> -->
 
   <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->

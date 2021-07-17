@@ -1,0 +1,80 @@
+
+
+/*  =======================================
+    BUTTONS
+    =================================== */
+
+    .btn, button {   
+        position: relative;
+        z-index: 1;
+        margin-left: 0;
+        margin-right: 6px;
+        margin-top: 6px;
+        max-width: 100%;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        padding: 8px 28px;
+        border-radius: 20px;
+        background: #fff;
+        /* color: #111; */
+        border: none;
+        /* font-family: var(--font-family); */
+        font-weight: 500;
+        font-size: 16px;
+        /* line-height: 1.5; */
+        line-height: 1.8;
+        height: 40px;
+        display: inline-block;
+        vertical-align: top;
+        text-align: center;
+        text-decoration: none;
+        background: 0 0;
+        cursor: pointer;
+        -webkit-transition: all .25s ease-out;
+        -o-transition: all .25s ease-out;
+        transition: all .25s ease-out;
+    }
+
+    .btn-white {
+        background: #fff;
+        /* color: #111; */
+    }
+    .btn-white:hover {
+        background: var(--white-hover);
+    }
+    .btn-black {
+        background: #111;
+        color: #fff;
+    }
+    .btn-black:hover {
+        background: var(--black-hover);
+        color: #fff;
+    }
+    .btn-outline {
+        background: #fff;
+        color: var(--main-black);
+        border: 1px solid var(--main-black);
+        padding: 7px 28px;
+    }
+    .btn-outline:hover {
+        background: var(--main-black);
+        color: #fff;
+    }
+    .btn-outline-white {
+        background: transparent;
+        color: #fff;
+        border: 1px solid #fff;
+        padding: 7px 28px;
+    }
+    .btn-outline-white:hover {
+        background: var(--white-OL-hover);
+        /* color: var(--main-black); */
+    }
+
+    @media screen and (max-width: 30em) {
+        .btn, button {   
+            width: 100%;
+        }
+    }
+

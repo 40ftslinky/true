@@ -49,12 +49,14 @@ p {
 
 a, .link, .btn, button {
     text-decoration: none;
-    color: var(--text-col);
     font-family: var(--font-link);
     font: 800;
 }
+.link, .menu-link {
+    color: var(--text-col);
+}
 
-a:hover {
+.link:hover, .menu-link:hover {
     text-decoration: none;
     color: var(--black-hover);
 }
@@ -202,3 +204,27 @@ h5.cs_type {
 }
 
 h6 {text-transform: uppercase;}
+
+p.award_copy {
+    text-align: center !important;
+    font-size: 12px;
+}
+
+h5.award_class {
+    text-align: center;
+    text-transform: uppercase !important;
+    font-family: var(--font-family-Aktiv);
+    font-size: 16px;
+    letter-spacing: 0.5rem;
+}
+
+
+h4.grow_amount {
+    text-align: center;
+    font-size: 40px;
+}
+
+p.grow_detail {
+    text-align: center !important;
+    font-size: 19px;
+}

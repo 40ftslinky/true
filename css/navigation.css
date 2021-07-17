@@ -254,12 +254,12 @@ a:hover svg.logo_svg path {
         position: absolute;
     }
 
-    .digital::before { background-image: url(../img/digital_icon.svg); }
-    .socialmedia::before { background-image: url(../img/social_icon.svg); }
-    .planning::before { background-image: url(../img/planning_icon.svg); }
-    .programmatic::before { background-image: url(../img/programmatic_icon.svg); }
-    .sem::before { background-image: url(../img/sem_icon.svg); }
-    .seo::before { background-image: url(../img/seo_icon.svg); }
+    .digital::before { background-image: url(../img/dinkus/digital_icon.svg); }
+    .socialmedia::before { background-image: url(../img/dinkus/social_icon.svg); }
+    .planning::before { background-image: url(../img/dinkus/planning_icon.svg); }
+    .programmatic::before { background-image: url(../img/dinkus/programmatic_icon.svg); }
+    .sem::before { background-image: url(../img/dinkus/sem_icon.svg); }
+    .seo::before { background-image: url(../img/dinkus/seo_icon.svg); }
 }
 
 
@@ -534,7 +534,7 @@ toggle */
         .menu_list .menu_item .menu-link::after {
             content: "";
             /* background-image: url(data:image/svg+xml,%3Csvg%20class%3D%22chev%22%20fill%3D%22%23111%22%20height%3D%2230px%22%20width%3D%2230px%22%20viewBox%3D%220%200%20185.4%20300%22%3E%3Cpath%20d%3D%22M7.3%20292.7c-9.8-9.8-9.8-25.6%200-35.4L114.6%20150%207.3%2042.7c-9.8-9.8-9.8-25.6%200-35.4s25.6-9.8%2035.4%200L185.4%20150%2042.7%20292.7c-4.9%204.8-11.3%207.3-17.7%207.3-6.4%200-12.7-2.5-17.7-7.3z%22%3E%3C%2Fpath%3E%3C%2Fsvg%3E); */
-            background: url(../img/chev_r.svg);
+            background: url(../img/dinkus/chev_r.svg);
             background-position: center right;
             background-size: 12px 12px;
             background-repeat: no-repeat;
