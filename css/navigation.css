@@ -567,7 +567,7 @@ toggle */
         }
         .menu_item-sub a.menu-link {
             display: inherit;
-            padding: 0 0 0 1rem;
+            padding: 0 0 0 5%;
         }
 
         .menu-link span {
