@@ -509,12 +509,17 @@
             margin: 0;
         }
         section#awards { 
-            width: 90vw;
+            width: 75vw;
             margin-left: auto;
             margin-right: auto;
         }
         #awards article {
             width: 100%;
+        }
+    }
+    @media screen and (max-width: 48rem) {
+        section#awards { 
+            width: 90vw;
         }
     }
 
@@ -553,6 +558,7 @@
 
     .awards_row_wrap {
         display: flex;
+        flex-wrap: nowrap;
         gap: 2%;
         margin-top: 4rem;
         margin-bottom: 4rem;
@@ -571,6 +577,7 @@
         .awards_row_wrap {
             flex-wrap: wrap;
             justify-content: space-evenly;
+            gap: 10%;
         }
         .award_wrap {
             max-width: 40%;
@@ -659,12 +666,17 @@
             margin: 0;
         }
         section#growth { 
-            width: 90vw;
+            width: 75vw;
             margin-left: auto;
             margin-right: auto;
         }
         #growth article {
             width: 100%;
+        }
+    }
+    @media screen and (max-width: 48rem) {
+        section#growth { 
+            width: 90vw;
         }
     }
 
@@ -694,6 +706,7 @@
     
     .growth_row_wrap {
         display: flex;
+        flex-wrap:nowrap;
         gap: 5%;
         justify-content: center;
         margin-top: 4rem;
@@ -710,7 +723,7 @@
         margin-bottom: 3em;
     }
 
-    @media screen and (max-width: 80em) {
+    @media screen and (max-width: 67.5em) {
         .growth_row_wrap {
             flex-wrap: wrap;
             justify-content: space-evenly;
@@ -866,6 +879,7 @@
         bottom:0;
         padding-right: 7.5%;
         padding-bottom: 7.5%;
+        padding-left:0;
         max-width: 40%;
         margin-left: 60%;
     }
