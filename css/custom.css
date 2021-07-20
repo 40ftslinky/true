@@ -444,7 +444,7 @@
         bottom:0;
         padding-left: 7.5%;
         padding-bottom: 7.5%;
-        max-width: 40%;
+        max-width: 45%;
     }
     @media screen and (max-width: 48em) {
         .cs_feature_text_wrap {
