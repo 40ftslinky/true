@@ -134,7 +134,7 @@
     }
 
     .footer h6 {
-        color: var(--main-color);
+        color: var(--white);
         font-family: var(--font-family-header);
         font-size: 13px;
         margin-top: 1rem;

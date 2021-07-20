@@ -41,7 +41,7 @@
         border: none;
         box-sizing: border-box;
         /* background:transparent; */
-        border-bottom:2px solid rgba(106,198,183,.8);
+        border-bottom:2px solid rgba(255,255,255,.8);
         background: rgba(0, 0, 0, 0);
         transition: all 0.2s ease-in-out;
         border-radius: unset;
@@ -68,9 +68,9 @@
     #form select:focus {
         border: none;
         outline: 0;
-        background: var(--main-color-30);
+        background: var(--white-30);
         /* background: var(--vlight_grey); */
-        border-bottom:2px solid var(--main-color-50);
+        border-bottom:2px solid var(--white-50);
         outline: none;
     }
 
@@ -95,8 +95,8 @@
     }
 
     #form input:focus {
-        background: var(--main-color-30);
-        border-bottom:2px solid var(--main-color);
+        background: var(--white-30);
+        border-bottom:2px solid var(--white);
         outline: none;
     }
 
