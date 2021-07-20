@@ -684,8 +684,8 @@
         .growth_text_wrap p.growth_copy {
             max-width: 80vw;
         }
-
     }
+    
     
     .growth_row_wrap {
         display: flex;
@@ -922,11 +922,31 @@
     }
 
     [class*="_text_wrap"],
-    [class*="_text_wrap"] p {} 
+    [class*="_text_wrap"] p {
+
+    } 
+    [class*="_text_wrap"].centre h2 {
+        max-width: 70vw;
+        text-align: center;
+        margin-top: 0;
+    }
+
+    [class*="_text_wrap"].centre p {
+        max-width: 50vw;
+        text-align: center; 
+    }
+    @media screen and (max-width: 48em) {
+        [class*="_text_wrap"].centre h2,
+        [class*="_text_wrap"].centre p {
+            max-width: 80vw;
+        }
+    }
+
     .subtitle {
         width: 40%;
         max-width: 40vw;
     }
+
 
     @media screen and (max-width: 48em) {
         h1[class*="_title"],
