@@ -238,9 +238,9 @@ a:hover svg.logo_svg path {
     
 }
 @media only screen and (min-width: 1081px){
-    .menu_item-heading,  {
+    .menu_item-heading  {
         font-family: var(--font-family-header);
-        margin-left: 30px;
+        margin-left: 30px !important;
         margin-bottom: 10px;
     }
 }
