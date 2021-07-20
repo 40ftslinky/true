@@ -203,13 +203,41 @@
         <div class="case_study_wrap">
 
           <!-- start visible -->
-          <div class="case_study_img_wrap state_on">
-            <img class="case_study_img" src="img/Hydralyte_Landscape_V2.jpg" alt="">
+          <div class="case_study_img_wrap hydralyte state_on ">
+            <!-- <img class="case_study_img"  alt="Hydralyte"> -->
+            <picture>
+              <source
+                media="(min-width: 800px)"
+                srcset="img/Hydralyte_Landscape.jpg"
+              />
+              <source
+                srcset="img/Hydralyte_Mobile.jpg"
+              />
+              <!-- For browsers that do not support picture element -->
+              <img
+                class="case_study_img" 
+                src="img/Hydralyte_Mobile.jpg" 
+                alt="Hydralyte" />
+            </picture>                  
           </div>
           
           <!-- start hidden -->
-          <div class="case_study_img_wrap state_off">
-            <img class="case_study_img" src="img/McVities_Landscape_V3.jpg" alt="">
+          <div class="case_study_img_wrap mcvities state_off">
+            <!-- <img class="case_study_img" src="img/McVities_Landscape.jpg" alt=""> -->
+            <picture>
+              <source
+                media="(min-width: 800px)"
+                srcset="img/McVities_Landscape.jpg"
+              />
+              <source
+                srcset="img/McVities_Mobile.jpg"
+              />
+              <!-- For browsers that do not support picture element -->
+              <img
+                class="case_study_img" 
+                src="img/McVities_Mobile.jpg" 
+                alt="McVities" />
+            </picture>  
           </div>
 
           <div class="case_study_text_wrap">
@@ -262,8 +290,9 @@
       
       <div class="awards_text_wrap">
         <h2 class="awards_title">Humble, but grateful</h2>
-        <p class="awards_copy">True has helped some of Australia’s most well known brands grow their audience, revenue, share of voice and performance. We are obsessed with driving efficient growth through data and captivation brand narratives. 
-          </p>
+        <p class="awards_copy">
+          True has helped some of Australia’s most well known brands grow their audience, revenue, share of voice and performance. We are obsessed with driving efficient growth through data and captivation brand narratives. 
+        </p>
       </div>
 
       <div class="awards_row_wrap">
@@ -317,7 +346,7 @@
       <article class="article cs_feature">
         <div class="cs_feature_wrap">
           <div class="cs_feature_img_wrap">
-            <img class="cs_feature_img" src="./img/Colour_Run_Landscape_V2.jpg" alt="">
+            <img class="cs_feature_img" src="./img/Colour_Run_Landscape.jpg" alt="">
           </div>
           <div class="cs_feature_text_wrap">
             <header>
@@ -349,7 +378,7 @@
       <article class="article cs_feature_right">
         <div class="cs_feature_wrap">
           <div class="cs_feature_img_wrap">
-            <img class="cs_feature_img" src="./img/Petbarn_Landscape_v3.jpg" alt="">
+            <img class="cs_feature_img" src="./img/Petbarn_Landscape.jpg" alt="">
           </div>
           <div class="cs_feature_text_wrap">
             <header>
@@ -383,7 +412,7 @@
       
       
       <div class="growth_text_wrap">
-        <h2 class="growth_title">Humble, but grateful</h2>
+        <h2 class="growth_title">Growth at a glance</h2>
         <p class="growth_copy">
           True has helped some of Australia’s most well known brands grow their audience, revenue, share of voice and performance. We are obsessed with driving efficient growth through data and captivation brand narratives. 
         </p>
@@ -459,14 +488,16 @@
               </h5>
 
               <h2 class="about_us_title">
-                The Color Run
+                The big three
               </h2>
 
-              <p class="about_us_copy">This international 5K fun run needed to efficiently drive ticket sales to consumers across Australia and New Zealand. The challenge? People saw the event as a one-off activity, so repeat purchases were in jeopardy. </p>
+              <p class="about_us_copy">
+                Our CEO, Eric Stephens talks about the three things clients are looking for in an agency partnership. 
+              </p>
             
             </header>
 
-            <button class="btn btn-white pink-txt video-btn">View Case study</button>
+            <button class="btn btn-white black-txt video-btn">Watch Video</button>
 
           </div>
         </div>
@@ -474,6 +505,23 @@
       </article>
       <!-- ... -->
     </section>
+
+
+    <!-- ... -->
+    <!-- TEXT SECTION -->
+    <!-- ... -->
+
+    <section id="ambition">
+          
+      <div class="_text_wrap centre">
+        <h2>Growth is driven by ambition</h2>
+        <p>
+          We start with the business ambition and work backwards. It’s about identifying not only what you want to achieve, but at what cost your company can afford to realise that ambition. Returns matter. 
+        </p>
+        <button class="btn btn-black">Lets Go!</button>
+      </div>
+    </section>
+
     
     <!-- ... -->
     <!-- ABOUT US RIGHT -->
@@ -494,16 +542,16 @@
               </h5>
 
               <h2 class="about_us_title">
-                Petbarn
+                Purpose beyond profit
               </h2>
 
               <p class="about_us_copy">
-                This Summer campaign relied on ‘consistency of message’ across all channels to deliver sales and get behind their annual Tree of Hope Appeal. <br>
-                The challenge? Creating a campaign engaging enough to cut through the normal holiday hoopla.    </p>
+                We believe that doing good work must be linked to doing good in the world. This year, because we live in a land girt by sea, True is on an ambitious mission to help clean up the oceans. 
+              </p>
             
             </header>
 
-            <button class="btn btn-white lime-txt video-btn">View Case study</button>
+            <button class="btn btn-white black-txt video-btn">Watch Video</button>
 
           </div>
         </div>
@@ -515,6 +563,8 @@
     <!-- ... -->
     <!-- XX -->
     <!-- ... -->
+
+    <!-- 
 
     <section id="XX">
 
@@ -532,10 +582,14 @@
 
     </section>  
 
+    -->
+
     <!-- ... -->
     <!-- CONTENT -->
     <!-- ... -->
     
+    <!-- 
+      
     <section id="content" class="two_col_feature">
       <div class="content_header_wrap">
         <h4 class="category">
@@ -568,9 +622,8 @@
             </h5>
           </div>
 
-        </article>
-        <!-- ... -->
-
+        </article> 
+        
         <article class="article feature">
           <div class="feature_wrap">
             <div class="feature_img_wrap">
@@ -595,11 +648,12 @@
             </h5>
           </div>
 
-        </article>
-        <!-- ... -->
+        </article> 
       </div>
 
     </section>
+
+    
     
     <section id="content_02" class="one_col_feature">
       <div class="content_header_wrap">
@@ -633,7 +687,6 @@
 
       </article>
       
-      <!-- ... -->
     </section>
 
     <section id="about">
@@ -671,9 +724,13 @@
 
           Sed ante urna, pellentesque quis malesuada ut, porttitor ac lectus. Pellentesque sit amet ultricies lorem, sed consectetur purus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nulla porta dictum vestibulum. In quis arcu laoreet, euismod lorem id, cursus velit. Donec a justo lacus. Curabitur euismod tortor vitae facilisis dapibus. Proin nulla mi, interdum ac purus ac, sagittis sodales sapien. Nulla tempus eros eu metus euismod, non tincidunt libero feugiat. Duis vestibulum justo semper leo sagittis, vel rhoncus orci imperdiet. Nullam maximus bibendum finibus. Donec quis accumsan leo. Vestibulum eu lacinia dolor, tincidunt blandit sem.</p>
 
-      <!-- ... -->
       </article>
     </section>
+
+    -->
+
+    <!-- ... -->
+
     <!-- ... -->
     <!-- FOOTER -->
     <!-- ... -->

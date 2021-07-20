@@ -71,7 +71,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 .h2, .h3, .h4, .h5, .h6, 
 h2, h3, h4, h5, h6 {
-    line-height: .833333;
+    line-height: 1.1;
 }
 
 .subtitle {
@@ -80,84 +80,136 @@ h2, h3, h4, h5, h6 {
     line-height:1.1;
 }
 
+/* 
+
+scale type using clamp()
+clamp(minimum, preferred, maximum);
+Minimum viewport width  = minWidth
+Maximum viewport width = maxWidth
+Minimum font size = maxF
+Maximum font size = minF
+1 rem = root font size
+
+
+slope = ( maxFontSize - minFontSize ) / ( maxWidth - minWidth );
+yAxisIntersection = -minWidth * slope + minFontSize
+
+font-size: clamp(minF, -yAxisIntersection + (slope * 100)vw, minF);
+
+font-size: calc((x / MaxVW) * 100vw) = F
+
+*/
+
 .h1, h1 {
-    font-size:calc(16px + (90 - 16) * ((100vw - 360px) / 1440));
-    font-size: clamp(16px, calc(16px + (90 - 16) * ((100vw - 360px) / 1440)), 90px);
-    /* line-height: .833333; */
+    font-size: 90px;
+    font-size: 5vw; 
+    font-size: min(max(40px, 5.357vw), 90px);
     line-height: 1.1;
-}
-@media screen and (max-width: 64em) {
-    .h1, h1 {
-        /* font-size: 48px; */
-    }
 }
 
 h1, h1.hero_title {
     margin-bottom: 0.5rem;
 }
 
-/* 
 h2.case_study_title {
-    font-size: 53px;
+    font-size: 40px;
+    /* font-size:calc(40px + (40 - 16) * ((100vw - 360px) / 1440));
+    font-size: clamp(40px, calc(16px + (40 - 16) * ((100vw - 360px) / 1440)), 40px); */
+    font-size: min(max(24px, 2.3vw), 40px);
     line-height: 1.1;
-    max-width: 60%;
 }
+
+/* @media screen and (max-width: 48em) {
+    h2.case_study_title {
+        font-size: 24px;
+        font-size:calc(24px + (40 - 24) * ((100vw - 360px) / 800));
+        font-size: clamp(24px, calc(24px + (40 - 35) * ((100vw - 800px) / 800)), 24px);
+    }
+} */
+
+@media screen and (max-width: 48em) {
+    h2.growth_title  {
+        /* font-size: 36px; */
+        /* font-size:calc(36px + (40 - 36) * ((100vw - 360px) / 800));
+        font-size: clamp(36px, calc(36px + (40 - 36) * ((100vw - 800px) / 800)), 36px); */
+
+    }
+}
+
+
 .case_study .subtitle {
-    margin: 1.5rem 0;
     font-size: 19px;
-    line-height: 1.25;
-} 
-*/
-h2.case_study_title {
-    max-width: 60%;
-    font-size:calc(16px + (40 - 16) * ((100vw - 360px) / 1440));
-    font-size: clamp(16px, calc(16px + (40 - 16) * ((100vw - 360px) / 1440)), 40px);
-    line-height: 1.1;
-}
-
-.case_study .subtitle {
-    margin: 2.5rem 0;
-    line-height: 1.25;
     font-size:calc(16px + (19 - 16) * ((100vw - 360px) / 1440));
     font-size: clamp(16px, calc(16px + (19 - 16) * ((100vw - 360px) / 1440)), 19px);
-
-} 
-
-.case_study .subtitle {
-    margin: 2.5rem 0;
     line-height: 1.25;
-    font-size:calc(16px + (19 - 16) * ((100vw - 360px) / 1440));
-    font-size: clamp(16px, calc(16px + (19 - 16) * ((100vw - 360px) / 1440)), 19px);
-
+    margin: 2.5rem 0;
 } 
 
-@media screen and (max-width: 64em) {
+@media screen and (max-width: 48em) {
     /* h2.case_study_title {
         font-size: 32px;
     } */
 }
 
 .h2, h2 {
-    font-size: 52px;
-    font-size:calc(16px + (52 - 16) * ((100vw - 360px) / 1440));
-    font-size: clamp(16px, calc(16px + (52 - 16) * ((100vw - 360px) / 1440)), 52px);
+    font-size: 53px;
+    /* font-size:calc(52px + (52 - 16) * ((100vw - 360px) / 1440));
+    font-size: clamp(52px, calc(16px + (52 - 16) * ((100vw - 360px) / 1440)), 52px); */
+    font-size: min(max(36px, 3.15vw), 53px);
+
 }
+
+
 
 h2.article_title {
     margin: 0 0 1rem;
 }
 
+h2.growth_title {
+    font-size: 63px;
+    font-size: min(max(36px, 3.75vw), 63px);
+    text-align: center;
+}
+
+.growth_text_wrap p.growth_copy {
+    max-width: 50vw;
+    text-align: center;
+}
+
 .h3, h3 {
     font-size: 30px;
-    font-size:calc(16px + (30 - 16) * ((100vw - 360px) / 1440));
-    font-size: clamp(16px, calc(16px + (30 - 16) * ((100vw - 360px) / 1440)), 30px);
+    font-size: min(max(24px, 1.785vw), 30px);
+
+    /* font-size:calc(30px + (30 - 16) * ((100vw - 360px) / 1440));
+    font-size: clamp(30px, calc(16px + (30 - 16) * ((100vw - 360px) / 1440)), 30px); */
 }
 
 
+.cs_type, .cs_title, .cs_subtitle, .cs_copy {
+    color:#fff;
+}
+.cs_title {
+    font-size: min(max(36px, 3.75vw), 63px);
+}
+
+.cs_type, .cs_subtitle {
+    font-size: min(max(16px, 1.785vw), 30px);
+}
+
+.cs_copy {
+    font-size: min(max(14px, 1.13vw), 19px);
+}
+
+.cs_type, .cs_subtitle {
+    font-family: var(--font-family-Aktiv);
+}
+
 .h4, h4 {
     font-size: 24px;
-    font-size:calc(16px + (24 - 16) * ((100vw - 360px) / 1440));
-    font-size: clamp(16px, calc(16px + (24 - 16) * ((100vw - 360px) / 1440)), 24px);
+    font-size: min(max(24px, 1.785vw), 24px);
+
+    /* font-size:calc(24px + (24 - 16) * ((100vw - 360px) / 1440));
+    font-size: clamp(24px, calc(16px + (24 - 16) * ((100vw - 360px) / 1440)), 24px); */
 }
 
 h4.category {
@@ -168,14 +220,18 @@ h4.category {
 }
 
 .subtitle {
-    margin: 0 0 1.5rem;
     font-size: 24px;
+    /* font-size:calc(24px + (24 - 16) * ((100vw - 360px) / 1440));
+    font-size: clamp(24px, calc(16px + (24 - 16) * ((100vw - 360px) / 1440)), 24px); */
     line-height: 1.25;
+    margin: 0 0 1.5rem;
 }
 .subtitle_large {
-    margin: 0;
     font-size: 36px;
+    font-size:calc(36px + (36 - 16) * ((100vw - 360px) / 1440));
+    font-size: clamp(36px, calc(16px + (36 - 16) * ((100vw - 360px) / 1440)), 36px);
     line-height: 1.25;
+    margin: 0;
 }
 
 .feature_wrap .subtitle, 
@@ -197,10 +253,11 @@ h5.type {
     margin-top: 1rem;
 }
 
-h5.cs_type {
+h5[class*="_type"] {
     font-size: 30px;
-    font-size:calc(16px + (30 - 16) * ((100vw - 360px) / 1440));
-    font-size: clamp(16px, calc(16px + (30 - 16) * ((100vw - 360px) / 1440)), 30px);
+    /* font-size:calc(30px + (30 - 16) * ((100vw - 360px) / 1440));
+    font-size: clamp(30px, calc(16px + (30 - 16) * ((100vw - 360px) / 1440)), 30px); */
+    font-size: min(max(16px, 1.785vw), 30px);
 }
 
 h6 {text-transform: uppercase;}
@@ -227,4 +284,24 @@ h4.grow_amount {
 p.grow_detail {
     text-align: center !important;
     font-size: 19px;
+}
+
+.centre h2, .centre p {
+    text-align: center;
+}
+
+
+h5.about_us_type {
+    font-size: 30px;
+    font-size: min(max(16px, 1.785vw), 30px);
+}
+p.about_us_copy {
+    font-size: 14px;
+    font-size: min(max(14px, 1.13vw), 19px);
+}
+
+@media screen and (max-width: 48em) {
+    h5.about_us_type,
+    h2.about_us_title,
+    p.about_us_copy {}
 }

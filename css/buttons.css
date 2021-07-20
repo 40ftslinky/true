@@ -19,11 +19,13 @@
 .green-txt { color:var(--green); }
 .lime-txt { color:var(--lime); }
 .blue-txt { color:var(--blue); } 
+.black-txt { color:var(--black); } 
 
 .pink-txt:hover,
 .green-txt:hover,
 .lime-txt:hover,
-.blue-txt:hover { color:white; }
+.blue-txt:hover,
+.black-txt:hover { color:white; }
 
 .pink-OL-txt:hover { color:var(--pink-hv); }
 .green-OL-txt:hover { color:var(--green-hv); }
@@ -67,6 +69,28 @@
         transition: all .25s ease-out;
     }
 
+    .video-btn {
+        padding-right: 4rem;
+    }
+    .video-btn::after {
+        content: '';
+        position: absolute;
+        width:13px;
+        height: 14px;
+        top: 50%;
+        right: 0;
+        /* translateY: -50%; */
+        transform: translateY(-50%);
+        background-image: url('../img/dinkus/play_arrow.svg');
+        /* background-image: url(data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2013.81883%2015.27917%22%3E%3Cpolygon%20points%3D%220.5%2014.431%200.5%200.848%2012.785%207.639%200.5%2014.431%22%20fill%3D%22none%22%20stroke%3D%22%232b2e34%22%2F%3E%3C%2Fsvg%3E); */
+        background-repeat: no-repeat;
+        /* padding-left: 2rem; */
+        margin-right: 1rem;
+    }
+    .video-btn:hover::after {
+        background-image: url(data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2013.81883%2015.27917%22%3E%3Cpolygon%20points%3D%220.5%2014.431%200.5%200.848%2012.785%207.639%200.5%2014.431%22%20fill%3D%22none%22%20stroke%3D%22%23fff%22%2F%3E%3C%2Fsvg%3E);
+    }
+
     .btn-white {
         background: #fff;
         /* color: #111; */
@@ -105,7 +129,7 @@
 
     @media screen and (max-width: 30em) {
         .btn, button {   
-            width: 100%;
-            max-width: 320px;
+            /* width: 100%;
+            max-width: 320px; */
         }
     }
