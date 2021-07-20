@@ -5,17 +5,29 @@
 
     ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
         color: rgba(255,255,255,.8);
-      }
-      ::-moz-placeholder { /* Firefox 19+ */
+        font-family: var(--font-family-Aktiv);
+    }
+    ::-moz-placeholder { /* Firefox 19+ */
         color: rgba(255,255,255,.8);
-      }
-      :-ms-input-placeholder { /* IE 10+ */
+        font-family: var(--font-family-Aktiv);
+    }
+    :-ms-input-placeholder { /* IE 10+ */
         color: rgba(255,255,255,.8);
-      }
-      :-moz-placeholder { /* Firefox 18- */
+        font-family: var(--font-family-Aktiv);
+    }
+    :-moz-placeholder { /* Firefox 18- */
         color: rgba(255,255,255,.8);
-      }
+        font-family: var(--font-family-Aktiv);
+    }
 
+
+    @media screen and (max-width: 48em) {
+        .footer_col_03, .footer_col_03 h6, #form.form {
+            display: none;
+        }
+    }
+    
+    
     #form.form {
         box-sizing: border-box;
     }
@@ -33,7 +45,7 @@
 
     #form label {
         color: white;
-        font-family: var(--font-family);
+        font-family: var(--font-family-Aktiv);
         font-size: 13px;
         margin-top: 1rem;
         transform: scale(1);
@@ -47,11 +59,12 @@
     #form input[name="message"] {
         width: 100%;
         padding: 0.5rem 1rem 0.5rem 0;
-        font-size: 1rem;
+        /* font-size: 1rem; */
+        font-size: 13px;
         line-height: inherit;
         letter-spacing: .2;
         color: white;
-        font-family: var(--font-family);
+        font-family: var(--font-family-Aktiv);
         border: none;
         box-sizing: border-box;
         /* background:transparent; */
