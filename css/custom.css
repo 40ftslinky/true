@@ -38,6 +38,11 @@
     }
 
 
+    html {
+        scroll-behavior: smooth;
+      }
+
+
     ::-moz-selection { background: var(--green-50); }
     ::selection { background: var(--green-50); }
 
