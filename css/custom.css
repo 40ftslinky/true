@@ -538,6 +538,12 @@
         max-width: 50vw;
         text-align: center;
     }
+    @media screen and (max-width: 80em) {
+        .awards_text_wrap p.awards_copy {
+            max-width: 75vw;
+        }
+    }
+    
     @media screen and (max-width: 48em) {
         .awards_text_wrap p.awards_copy {
             max-width: unset;
@@ -689,13 +695,18 @@
     }
 
     .growth_text_wrap h2.growth_title {
-        max-width: 70vw;
+        /* max-width: 70vw; */
         text-align: center;
     }
 
     .growth_text_wrap p.growth_copy {
         max-width: 50vw;
         text-align: center;
+    }
+    @media screen and (max-width: 80em) {
+        .growth_text_wrap p.growth_copy {
+            max-width: 75vw;
+        }
     }
     @media screen and (max-width: 48em) {
         .growth_text_wrap p.growth_copy {
@@ -886,6 +897,7 @@
     @media screen and (max-width: 48em) {
         .about_us_feature_right .about_us_feature_text_wrap {
             margin-left: 0;
+            padding-left:7.5%;
         }
     }
 
