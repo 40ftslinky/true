@@ -1,6 +1,18 @@
 // add class is-active .js
 
 jQuery(document).ready(function( $ ) {
+    //  desktop accordian
+    $(".breakdown_dms_list_title").click(function(){
+        $(this).toggleClass("is-active");
+        $(this).next("p").slideToggle();
+        // if (jQuery(this).hasClass("is-active")){
+        //     $(this).next("p").slideDown();	 
+        // }
+        // else {
+        //     $(this).next("p").slideUp();
+        // }
+    });
+
     $("#burger-check").change(function(){
         if($(this).is(":checked")) {
             $("#nav").addClass("is-active");
@@ -18,7 +30,7 @@ jQuery(document).ready(function( $ ) {
     }); 
 
     $(".menu_list .menu-link").on("click", function() {
-        $(this).find(".menu_dropdown").slideToggle();
+        $(this).next(".menu_dropdown").slideToggle();
         // $(".menu-link").find(".is-active").remove("is-active");
         $(this).toggleClass("is-active");
         // Ross   changes  27/7/21
@@ -51,8 +63,7 @@ jQuery(document).ready(function( $ ) {
         $(".menu_dropdown").removeClass("is-active");
         $(".menu-link").removeClass("is-active");
         $(".menu-icons").remove("is-active");
-
     });
-
+    
 });
 
