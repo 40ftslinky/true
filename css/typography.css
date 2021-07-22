@@ -111,36 +111,25 @@ h1, h1.hero_title {
     margin-bottom: 0.5rem;
 }
 
+h1.hero_dms_title {
+    font-size: 63px;
+    font-size: min(max(36px, 3.75vw), 63px);
+    text-align: left;
+}
+#intro_dms h1 {
+    text-align: center;
+}
+
 h2.case_study_title {
     font-size: 40px;
-    /* font-size:calc(40px + (40 - 16) * ((100vw - 360px) / 1440));
-    font-size: clamp(40px, calc(16px + (40 - 16) * ((100vw - 360px) / 1440)), 40px); */
     font-size: min(max(24px, 2.3vw), 40px);
     line-height: 1.1;
 }
 
-/* @media screen and (max-width: 48em) {
-    h2.case_study_title {
-        font-size: 24px;
-        font-size:calc(24px + (40 - 24) * ((100vw - 360px) / 800));
-        font-size: clamp(24px, calc(24px + (40 - 35) * ((100vw - 800px) / 800)), 24px);
-    }
-} */
-
-@media screen and (max-width: 48em) {
-    h2.growth_title  {
-        /* font-size: 36px; */
-        /* font-size:calc(36px + (40 - 36) * ((100vw - 360px) / 800));
-        font-size: clamp(36px, calc(36px + (40 - 36) * ((100vw - 800px) / 800)), 36px); */
-
-    }
-}
-
-
-.case_study .subtitle {
+.case_study .subtitle, 
+#hero_dms p {
     font-size: 19px;
-    font-size:calc(16px + (19 - 16) * ((100vw - 360px) / 1440));
-    font-size: clamp(16px, calc(16px + (19 - 16) * ((100vw - 360px) / 1440)), 19px);
+    font-size: min(max(16px, 0.536vw), 19px);
     line-height: 1.25;
     margin: 2.5rem 0;
 } 
