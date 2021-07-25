@@ -3,7 +3,7 @@
 jQuery(document).ready(function( $ ) {
     //  desktop accordian
     $(".breakdown_dms_list_title").click(function(){
-        $(this).toggleClass("is-active");
+        $(this).parent().toggleClass("is-active");
         $(this).next("p").slideToggle();
         // if (jQuery(this).hasClass("is-active")){
         //     $(this).next("p").slideDown();	 
@@ -33,6 +33,7 @@ jQuery(document).ready(function( $ ) {
         $(this).next(".menu_dropdown").slideToggle();
         // $(".menu-link").find(".is-active").remove("is-active");
         $(this).toggleClass("is-active");
+        
         // Ross   changes  27/7/21
         // set counter
 		var count_active = 0;			
