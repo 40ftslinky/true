@@ -22,14 +22,15 @@
 }
 
 @font-face {
-    font-family: "Helvetica";
+    /* font-family: "Helvetica";
     src: url('../fonts/Helvetica.otf') format('opentype');
-    font-weight: normal;
+    font-weight: normal; */
 }
 
 :root {
     --text-col:#2B2E34;
-    --font-family: "Helvetica",Arial,"Noto Sans",sans-serif;
+    /* --font-family: "Helvetica",Arial,"Noto Sans",sans-serif; */
+    --font-family: "AktivGrotesk",Arial,"Noto Sans",sans-serif;
     --font-family-header: "AktivGrotesk-Bold",Arial,"Noto Sans",sans-serif;
     /* --font-link: "Helvetica-Bold",Arial,"Noto Sans",sans-serif; */
     --font-link: "AktivGrotesk-Bold",Arial,"Noto Sans",sans-serif;
@@ -67,7 +68,7 @@ h1, h2, h3, h4, h5, h6 {
     text-transform: none !important;
     font-family: var(--font-family-header);
     font-weight: 800;
-    letter-spacing: -0.4px;
+    /* letter-spacing: -0.4px; */
 }
 .h2, .h3, .h4, .h5, .h6, 
 h2, h3, h4, h5, h6 {
@@ -82,21 +83,7 @@ h2, h3, h4, h5, h6 {
 
 /* 
 
-scale type using clamp()
-clamp(minimum, preferred, maximum);
-Minimum viewport width  = minWidth
-Maximum viewport width = maxWidth
-Minimum font size = maxF
-Maximum font size = minF
-1 rem = root font size
-
-
-slope = ( maxFontSize - minFontSize ) / ( maxWidth - minWidth );
-yAxisIntersection = -minWidth * slope + minFontSize
-
-font-size: clamp(minF, -yAxisIntersection + (slope * 100)vw, minF);
-
-font-size: calc((x / MaxVW) * 100vw) = F
+font-size: min(max(MOB*0.4px, DESK/1680vw), DESKpx);
 
 */
 
@@ -126,28 +113,12 @@ h2.case_study_title {
     line-height: 1.1;
 }
 
-.case_study .subtitle, 
-#hero_dms p {
-    font-size: 19px;
-    font-size: min(max(16px, 0.536vw), 19px);
-    line-height: 1.25;
-    margin: 2.5rem 0;
-} 
-
-@media screen and (max-width: 48em) {
-    /* h2.case_study_title {
-        font-size: 32px;
-    } */
-}
 
 .h2, h2 {
     font-size: 53px;
-    /* font-size:calc(52px + (52 - 16) * ((100vw - 360px) / 1440));
-    font-size: clamp(52px, calc(16px + (52 - 16) * ((100vw - 360px) / 1440)), 52px); */
     font-size: min(max(36px, 3.15vw), 53px);
-
+    margin-bottom: 0.5rem;
 }
-
 
 
 h2.article_title {
@@ -160,10 +131,6 @@ h2.growth_title {
     text-align: center;
 }
 
-.growth_text_wrap p.growth_copy {
-    max-width: 50vw;
-    text-align: center;
-}
 
 .h3, h3 {
     font-size: 30px;
@@ -185,9 +152,6 @@ h2.growth_title {
     font-size: min(max(16px, 1.785vw), 30px);
 }
 
-.cs_copy {
-    font-size: min(max(14px, 1.13vw), 19px);
-}
 
 .cs_type, .cs_subtitle {
     font-family: var(--font-family-Aktiv);
@@ -195,7 +159,7 @@ h2.growth_title {
 
 .h4, h4 {
     font-size: 24px;
-    font-size: min(max(24px, 1.785vw), 24px);
+    font-size: min(max(20px, 1.785vw), 24px);
 
     /* font-size:calc(24px + (24 - 16) * ((100vw - 360px) / 1440));
     font-size: clamp(24px, calc(16px + (24 - 16) * ((100vw - 360px) / 1440)), 24px); */
@@ -210,15 +174,11 @@ h4.category {
 
 .subtitle {
     font-size: 24px;
-    /* font-size:calc(24px + (24 - 16) * ((100vw - 360px) / 1440));
-    font-size: clamp(24px, calc(16px + (24 - 16) * ((100vw - 360px) / 1440)), 24px); */
     line-height: 1.25;
     margin: 0 0 1.5rem;
 }
 .subtitle_large {
     font-size: 36px;
-    font-size:calc(36px + (36 - 16) * ((100vw - 360px) / 1440));
-    font-size: clamp(36px, calc(16px + (36 - 16) * ((100vw - 360px) / 1440)), 36px);
     line-height: 1.25;
     margin: 0;
 }
@@ -270,9 +230,29 @@ h4.grow_amount {
     font-size: 40px;
 }
 
-p.grow_detail {
+p {
+    font-size: 19px;
+    font-size: min(max(14px, 1.13vw), 19px);
+}
+
+p.grow_detail, 
+.cs_copy {
     text-align: center !important;
     font-size: 19px;
+    font-size: min(max(14px, 1.13vw), 19px);
+}
+
+.case_study .subtitle, 
+#hero_dms p {
+    font-size: 19px;
+    font-size: min(max(16px, 0.536vw), 19px);
+    line-height: 1.25;
+    margin: 2.5rem 0;
+} 
+
+.growth_text_wrap p.growth_copy {
+    max-width: 50vw;
+    text-align: center;
 }
 
 .centre h2, .centre p {

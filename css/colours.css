@@ -21,8 +21,13 @@
     --main-color-30:rgba(106,198,183,0.3);
     --white-50:rgba(255,255,255,0.5);
     --white-30:rgba(255,255,255,0.3);
+    --main-val:106,198,183;
+    --black-val:45,46,52;
 }
 
+.trans_col_val {
+    background-color: rgba(var(--main-val),0.3);
+}
 
 /*--teal:#6ac6b7;*/
 .true_teal {color:#6ac6b7}
