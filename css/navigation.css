@@ -161,8 +161,12 @@ a:hover svg.logo_svg path {
     padding-left: 0;
 }
 
-.menu > li {display: inline-block;}
-.menu_dropdown li { display: block; position: relative;}
+.menu > li {
+    display: inline-block;}
+.menu_dropdown li { 
+    /* display: block;  */
+    position: relative;}
+
 
 @media only screen and (min-width: 1081px){
     .menu_list .menu_item{
@@ -174,8 +178,14 @@ a:hover svg.logo_svg path {
 }
 .menu_item-sub {
     /* display: inline-block; */
-    padding: 1rem 1rem;
+    padding: 1rem 2rem;
 }
+@media only screen and (min-width: 1081px){
+    .menu_item-sub {
+        padding: 1rem;
+    }
+}
+
 
 .menu_item a {
     padding: 1rem 1rem 3.5rem 1rem;
@@ -196,21 +206,32 @@ a:hover svg.logo_svg path {
 @media only screen and (min-width: 1081px){
     .menu_dropdown-wrap {
         margin: auto;
-        /* max-width: 1440px;
-        width: 75vw; */
         max-width: 1250px;
-        width: 63vw;
+        /* width: 63vw; */
         display: flex;
         flex-wrap: wrap;
+        align-items: flex-start;
+        align-content: flex-start;
         justify-content: center;
-        gap: 2rem;
+        gap: 1rem;
     }
     .menu_item-sub {
-        flex: 30%;
-        margin: 0 auto;
+        /* 
+        parent has flex-direction: row, 
+        so .element should have shrink set on 1 
+        otherwise the text inside won't wrap */
+        white-space: initial;
+        flex: 0 0 24%;
+        margin: 0;
+        /*  */
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        align-content: flex-start;
     }
     .menu_item-sub a {
-        display: inline-flexbox;
+        /* display: inline-flexbox; */
     }
     .menu_item-sub:hover {
         background: white;
@@ -226,6 +247,12 @@ a:hover svg.logo_svg path {
 
 .menu_item-sub a {
     padding: 1rem 2rem;
+}
+
+@media only screen and (min-width: 1081px){
+    .menu_item-sub a {
+        padding: 1rem;
+    }
 }
 
 .menu_item-sub .menu-link {
@@ -253,7 +280,10 @@ a:hover svg.logo_svg path {
         content: '';
         background-size: contain;
         background-repeat: no-repeat;
-        left: 17px;
+        margin-left: 10px;
+        /* left: 37px; */
+        left: 22px;
+        /* left: 17px; */
         /* left: 0; */
         width:20px;
         height: 20px;
