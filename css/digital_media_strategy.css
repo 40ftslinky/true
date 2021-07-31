@@ -62,7 +62,7 @@ section:first-of-type {
 
 
 @media screen and (max-width: 48em) {
-    .col_feature {
+    .two_col .col_feature, .col_feature {
         width: 100%;
     }
 }
@@ -127,6 +127,7 @@ img.feature_img {
     }
     @media screen and (max-width: 48em) {
         #hero_dms {
+            margin-top: var(--header-height);
             min-height: 100vh;
         }
     }
@@ -216,14 +217,6 @@ img.feature_img {
         width: 100%;
         object-fit: cover;
         height: 80vh;
-    }
-
-    .cs_video_caption  {
-        font-size: 21px;
-        font-family: var(--font-family-Aktiv);
-    }
-    .cs_video_caption strong {
-        font-family: var(--font-family-header);
     }
 
     .cs_video_text_wrap {

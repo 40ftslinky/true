@@ -214,7 +214,7 @@
         align-items: center;
         align-content: center;
         width: 50%;
-        height: 75vh;
+        height: 67vh;
     }
 
     @media screen and (max-width: 48em) {
@@ -231,6 +231,7 @@
 
     #endorsements [class*="_img_wrap"] {
         min-width: 100%;
+        height:67vh;
     }
     
     
@@ -251,10 +252,8 @@
     }
 
     .slide_quote {
-        /* width: 71px;
-        height: 64px; */
-        width: 4vw;
-        /* height: 64px; */
+        width: 3.6vw;
+        max-width: 71px;
     }
     @media screen and (max-width: 48em) {
         .slide_quote {
@@ -269,12 +268,18 @@
     .slide_quote::before {
         content: '';
         position: absolute;
-        width: 10vw;
+        /* width: 3vw; */
         /* height: 64px; */
         background-image: url(../img/dinkus/quote.svg);
         background-repeat: no-repeat;
         background-size: cover;
     }
+    @media screen and (max-width: 48em) {
+        .slide_quote::before {
+            width: 10vw;
+        }
+    }
+    
     .slide_copy {}
 
     @media screen and (max-width: 48em) {
