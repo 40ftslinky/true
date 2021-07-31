@@ -93,6 +93,106 @@
     base
     =================================== */
 
+    section {
+        /*  */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    section:first-of-type {
+        margin-top: 0;
+        /* height: calc(100vh - var(--header-height)); */
+        /* min-height: 100vh; */
+        /* margin-bottom: 0; */
+    }
+    
+    @media screen and (max-width: 48em) {
+        section:first-of-type {
+            margin-top: var(--header-height);
+            /* min-height: 100vh; */
+        }
+    }
+    
+    .one_col {
+        flex-direction: column;
+    }
+    .two_col {
+        flex-direction: row;
+    }
+    
+    .col_wrap {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 5%;
+    }
+    
+    
+    @media screen and (max-width: 48em) {
+        .col_wrap {
+            flex-direction: column;
+        }
+    }
+    
+    .col_feature {
+        position: relative;
+        width: 100%;
+    }
+    
+    .two_col .col_feature {
+        width: 50%;
+    }
+    
+    
+    @media screen and (max-width: 48em) {
+        .two_col .col_feature, .col_feature {
+            width: 100%;
+        }
+    }
+    
+    .col_feature_wrap {
+        position: relative;
+    }
+    
+    .two_col .col_wrap .col_feature_img_wrap{
+        width: 100%;
+        aspect-ratio: 1 / 1;
+    }
+    
+    .col_feature_img_wrap::before { 
+        content: "";  
+        /* :before and :after both require content */
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        /* background-image: linear-gradient(20deg,rgba(0,0,0,0.4),rgba(0,0,0,0)); */
+        opacity: .7;
+    }
+    
+    
+    img.feature_img {
+        width: 100%;
+        object-fit: cover;
+    }
+    .one_col img.feature_img {
+        height: 80vh;
+    }
+    .two_col img.feature_img {
+        width: 100%;
+        /* height: calc(60vh + 5%); */
+        object-fit: cover;
+    }
+    
+    .col_feature_text_wrap {
+        align-items: flex-start;
+    }
+    
+
     [class*="_img_wrap"] {
         min-width: 100%;
     }
