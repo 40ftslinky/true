@@ -204,6 +204,9 @@ img.feature_img {
     }
     
     .cs_video_wrap {}
+    .video_wrap {
+        min-width: 100%;
+    }
 
     .cs_video_wrap h2, .cs_video_wrap .subtitle {
         color: white;
@@ -398,64 +401,3 @@ img.feature_img {
     }
 
 
-
-/*  =======================================
-    REVISIT_DMS
-    =================================== */
- 
-    .end_ad {
-        position: relative;
-    }
-
-    .end_ad_img_wrap::before { 
-        content: "";  
-        /* :before and :after both require content */
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background-image: linear-gradient(20deg,rgba(0,0,0,0.4),rgba(0,0,0,0));
-        opacity: 0.7;
-    }
-
-
-    .end_ad img[class*="_img"] {
-        width: 100%;
-        max-height: 45vh;
-        object-fit: cover;
-    }
-    .end_ad img.feature_img {
-        
-    }
-    
-
-    .end_ad_text_wrap {
-        position: absolute;
-        /* bottom:0;
-        padding-left: 30px;
-        padding-bottom: 30px; */
-    }
-
-    .end_ad [class*="_text_wrap"] header {
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .end_ad h2, .end_ad p {
-        color: white;
-        text-align: center;
-        max-width: unset;
-    }
-
-    .end_ad h2 {
-        width: 40%;
-        margin-bottom: 0;
-    }
-
-    .end_ad p {
-        width: 62.5%;
-    }

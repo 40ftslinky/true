@@ -1,0 +1,477 @@
+/* about.css */
+
+#hero_about {
+    margin-top: var(--header-height);
+}
+
+.hero_about_text_wrap {}
+.hero_about_title {}
+
+
+.hero_about_text_wrap  {
+    width: 100%;
+    min-height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero_about_text_wrap h1 {
+    max-width: 90%;
+    text-align: center;
+}
+.hero_about_text_wrap p {
+    max-width: 70%;
+    text-align: center;
+}
+
+@media screen and (max-width: 48em) {
+    .hero_about_text_wrap h1, .hero_about_text_wrap p {
+        max-width: 90vw;
+        text-align: left;
+    }
+}
+
+
+
+/*  =======================================
+    INTRO_ABOUT
+    =================================== */
+
+    #intro_about .col_wrap {
+        padding-left: 7.5%;
+        padding-right: 7.5%;
+    }
+    @media screen and (max-width: 48em) {
+        #intro_about .col_wrap {
+            padding-left: 0;
+            padding-right: 0;
+        }
+    }
+
+    .intro_about_text_wrap h1 {
+        max-width: 90%;
+        text-align: center;
+    }
+    .intro_about_text_wrap h2.intro_about_title {
+        max-width: 70%;
+        text-align: center;
+        margin-top: 1em;
+    }
+    .intro_about_text_wrap p {
+        max-width: 70%;
+        text-align: center;
+    }
+
+    #intro_about h4{
+        text-align: left; 
+        margin-bottom: 0;
+    }
+
+    #intro_about [class*="_text_wrap"].left p {
+        width: 100%;
+        max-width: 51vw;
+        text-align: left; 
+    }
+
+    @media screen and (max-width: 1080px) {
+        #intro_about [class*="_text_wrap"].left p {
+            max-width: 80vw;
+            width: 100%;
+        }
+    }
+
+    /* ----------------------------
+    image grid 
+    ------------------------------- */
+
+     
+    [class*="_grid_wrap"] {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        grid-template-rows: 3fr;
+        gap: 1rem 1rem;
+        grid-auto-flow: row;
+        grid-template-areas:
+          "left_grid" 
+          "two_grid";
+    }
+      
+    .one_left_grid { 
+        grid-area: "one_left_grid"; 
+    }
+      
+    .two_grid {
+        display: grid;
+        grid-template-columns: 2fr;
+        grid-template-rows: 1fr 1fr;
+        /* gap: 1rem 1rem; */
+        grid-auto-flow: row;
+        grid-template-areas:
+          "two-top_grid"
+          "bottom_grid";
+        grid-area: "two_grid";
+      }
+      
+    .two-top_grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+        gap: 1rem 1rem;
+        grid-auto-flow: row;
+        grid-template-areas:
+          "midtop_grid" 
+          "righttop_grid";
+        grid-area: "two-top_grid";
+    }
+      
+    .midtop_grid { 
+        grid-area: "midtop_grid"; 
+    }
+    
+    .righttop_grid { 
+        grid-area: "righttop_grid"; 
+    }
+    
+    .bottom_grid { 
+        grid-area: "bottom_grid"; 
+    }
+      
+
+/* -------------------------------- */
+
+
+/* [class*="_img_wrap"] */
+.about_img_wrap {
+    min-width: 100%;
+}
+
+/* [class*="_feature_img"] */
+.about_feature_img {
+    width: 100%;
+    height: 40vh;
+    object-fit: cover; 
+}
+
+.one_left_grid .about_feature_img {
+    /* gap = 1rem */
+    height: calc(80vh + 1rem);
+}
+
+.bottom_grid {}
+
+@media screen and (max-width: 48em) {
+    .about_img_grid_wrap,
+    .one_left_grid,
+    .two_grid,
+    .two-top_grid,
+    .midtop_grid,
+    .righttop_grid,
+    .bottom_grid {
+        grid-template-columns: 1fr;
+        gap:1rem !important;
+    }
+    .one_left_grid .about_feature_img,
+    .bottom_grid
+    {
+        height: 40vh;
+    }
+    .about_img_grid_wrap
+    {
+        max-height: calc(160vh + 4rem);
+    }
+}
+
+
+
+/*  ========================================
+    ENDORSEMENTS
+    =======================================  */
+
+    .endorse_text_wrap {}
+    .endorse_title {}
+    .endorse_copy {}
+
+    .two_col {
+
+    }
+    #endorsements .col_wrap {
+        flex-direction: row;
+        margin-top: 3rem;
+        margin-bottom: 3rem;
+    }
+    @media screen and (max-width: 48em) {
+        #endorsements .col_wrap {
+            flex-direction: column;
+        }
+    }
+
+    #endorsements .col_wrap [class*="col_"] {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        width: 50%;
+        height: 75vh;
+    }
+
+    @media screen and (max-width: 48em) {
+        #endorsements .col_wrap [class*="col_"] {
+            width: 100%;
+            max-height: unset;
+            height: unset;
+            /* gap:5%; */
+            margin-bottom: 3rem;
+        }
+    }
+
+    
+
+    #endorsements [class*="_img_wrap"] {
+        min-width: 100%;
+    }
+    
+    
+   #endorsements img[class*="_img"] {
+        width: 100%;
+        object-fit: cover;
+    }
+    @media screen and (max-width: 48em) {
+        #endorsements [class*="_img_wrap"] img {
+            max-height: 50vh;
+            /* object-fit: contain; */
+        }
+    }
+
+
+    .slide_text_wrap {
+        align-items: flex-start;
+    }
+
+    .slide_quote {
+        /* width: 71px;
+        height: 64px; */
+        width: 4vw;
+        /* height: 64px; */
+    }
+    @media screen and (max-width: 48em) {
+        .slide_quote {
+            width: 10vw;
+        }
+    }
+    .slide_quote img {
+        width: 100%;
+        object-fit: cover;
+    }
+    
+    .slide_quote::before {
+        content: '';
+        position: absolute;
+        width: 10vw;
+        /* height: 64px; */
+        background-image: url(../img/dinkus/quote.svg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .slide_copy {}
+
+    @media screen and (max-width: 48em) {
+        .slide_copy h3{
+            max-width: 100%;
+        }
+    }
+    .slide_credit {}
+
+/*  =======================================
+    BRAND
+    =================================== */
+
+    /* Brand */
+
+    #brands, #brands article {
+        margin: auto;
+        max-width: 1440px;
+        width: 75vw;
+    }
+    section#brands {
+        margin-bottom: 5rem;
+    }
+
+    @media screen and (max-width: 1700px) {
+        section#brands, #brands article {
+            margin: 0;
+        }
+        section#brands { 
+            width: 75vw;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        #brands article {
+            width: 100%;
+        }
+    }
+    @media screen and (max-width: 48rem) {
+        section#brands { 
+            width: 90vw;
+        }
+    }
+
+    .brands_text_wrap  {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .brands_text_wrap h2.brands_title {
+        /* max-width: 70vw; */
+        text-align: center;
+    }
+
+    .brands_text_wrap p.brands_copy {
+        max-width: 50vw;
+        text-align: center;
+    }
+    @media screen and (max-width: 80em) {
+        .brands_text_wrap p.brands_copy {
+            max-width: 75vw;
+        }
+    }
+    @media screen and (max-width: 48em) {
+        .brands_text_wrap p.brands_copy {
+            max-width: 80vw;
+        }
+    }
+    
+    
+    .brands_row_wrap {
+        display: flex;
+        /* flex-wrap:nowrap; */
+        flex-wrap:wrap;
+        /* gap: 7.5%; */
+        justify-content: space-around;
+    }
+    @media screen and (max-width: 1600px) {
+        .brands_row_wrap {
+            gap: 5%;
+        }
+    }
+    @media screen and (max-width: 1280px) {
+        .brands_row_wrap {
+            /* gap: 3%; */
+        }
+    }
+    @media screen and (max-width: 1280px) {
+        /* @media screen and (max-width: 67.5em) { */
+        .brands_row_wrap {
+            flex-wrap: wrap;
+            /* justify-content: space-evenly; */
+            /* gap: 5%; */
+        }
+    }
+    @media screen and (max-width: 48em) {
+        .brands_row_wrap {
+            /* gap: 5%; */
+        }
+    }
+
+
+    .brand_wrap {
+        width: 20%;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 3em;
+    }
+
+    @media screen and (max-width: 67.5em) {        
+        .brand_wrap {
+            width: 30%;
+        }
+    }
+
+    @media screen and (max-width: 40em) {
+        .brand_wrap {
+            width: 45%;
+        }
+        .brand_wrap img {
+            width: 100%;
+        }
+    }
+    @media screen and (max-width: 35em) {
+        .brand_wrap {
+            /* width: 100%; */
+        }
+    }
+
+    /* brand */
+    
+    .brand_img {
+        /* width:90%; */
+        min-width: 55px;
+        max-height: 95px;
+        /* max-width: 55px;
+        max-height: 95px; */
+        content: '';
+        background-repeat: no-repeat;
+        background-size: contain;
+        /* margin-top: 0.5 rem; */
+        margin-bottom: 2rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .brand_img img{        
+        max-width: 220px;
+        height: 90%;
+    }
+    
+    .brands_text_wrap  {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 3rem;
+    }
+    
+    h4.brand_amount {
+        /* text-align: center;
+        font-size:40px; */
+        max-width: 180px;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    .up_arrow::before, .down_arrow::before {
+        width: 25px;
+        height: 28px;
+        content: '';
+        background-repeat: no-repeat;
+        background-size: contain;
+        margin-right: 0.5rem;
+        padding: 0 35px 0 0
+    }
+    .up_arrow::before {        
+        background-image: url(../img/dinkus/up_arrow.svg);
+    }
+    .down_arrow::before {        
+        background-image: url(../img/dinkus/down_arrow.svg);
+    }
+
+    p.brand_detail {
+        /* text-align: center !important;
+        font-size: 19px; */
+        margin-top: 0;
+        margin-top: 0;        
+        margin-bottom: 1em;
+        min-width: 143px;
+    }
+
+    

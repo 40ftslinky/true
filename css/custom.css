@@ -93,8 +93,12 @@
     base
     =================================== */
 
+    [class*="_img_wrap"] {
+        min-width: 100%;
+    }
+
     [class*="_img"] {
-        /* width: 100%; */
+        width: 100%;
         /* height: 60vh; */
         object-fit: cover; 
     }
@@ -106,15 +110,17 @@
         justify-content: center;
         align-items: center;
     }
-    [class*="_feature_text_wrap"]  {
-        align-items: flex-start;
-    }
+    
     [class*="_text_wrap"] {
         width: 100%;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
+    }
+    /* has to follow to over-power above class */
+    [class*="_feature_text_wrap"]  {
+        align-items: flex-start;
     }
 
     .centre  {
@@ -415,7 +421,7 @@
 
     .col_wrap {
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         justify-content: center;
         align-items: flex-start;
         gap: 5%;
@@ -460,6 +466,7 @@
         width: 100%;
         object-fit: cover;
     }
+
     .one_col_feature img.feature_img {
         height: 80vh;
     }
@@ -545,6 +552,7 @@
         padding-left: 7.5%;
         padding-bottom: 7.5%;
         max-width: 45%;
+        align-items: flex-start;
     }
     @media screen and (max-width: 48em) {
         .cs_feature_text_wrap {
@@ -787,6 +795,7 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        margin-bottom: 3rem;
     }
 
     .growth_text_wrap h2.growth_title {
@@ -818,6 +827,30 @@
         /* margin-top: 4rem;
         margin-bottom: 4rem; */
     }
+    @media screen and (max-width: 1600px) {
+        .growth_row_wrap {
+            gap: 5%;
+        }
+    }
+    @media screen and (max-width: 1280px) {
+        .growth_row_wrap {
+            /* gap: 3%; */
+        }
+    }
+    @media screen and (max-width: 1280px) {
+        /* @media screen and (max-width: 67.5em) { */
+        .growth_row_wrap {
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            /* gap: 5%; */
+        }
+    }
+    @media screen and (max-width: 48em) {
+        .growth_row_wrap {
+            /* gap: 5%; */
+        }
+    }
+
 
     .grow_wrap {
         /* width: 25%; */
@@ -829,11 +862,7 @@
         margin-bottom: 3em;
     }
 
-    @media screen and (max-width: 67.5em) {
-        .growth_row_wrap {
-            flex-wrap: wrap;
-            justify-content: space-evenly;
-        }
+    @media screen and (max-width: 67.5em) {        
         .grow_wrap {
             max-width: 40%;
         }
@@ -865,7 +894,7 @@
 
     .grow_img img{        
         max-width: 220px;
-        width: 90%;
+        /* width: 90%; */
         /* margin-left: auto;
         margin-right: auto; */
     }
@@ -1009,7 +1038,92 @@
         margin-bottom: 0;
     }
   
+
+/*  =======================================
+    END AD
+    =================================== */
+  
+/*  */
+
+
+.end_ad {
+    position: relative;
+}
+.end_ad_img_wrap{ 
+    min-width: 100%;
+    height: 45vh;
+}
+
+@media screen and (max-width: 36rem) {
+    .end_ad .end_ad_img_wrap {
+        height: 67vh;
+    }
+}
+
+.end_ad_img_wrap::before { 
+    content: "";  
+    /* :before and :after both require content */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(20deg,rgba(0,0,0,0.2),rgba(0,0,0,0.0));
+    opacity: 0.7;
+}
+@media screen and (max-width: 48rem) {
+    .end_ad_img_wrap::before { 
+        background-image: linear-gradient(20deg,rgba(0,0,0,0.7),rgba(0,0,0,0.6));
+    }
+}
+
+.end_ad img[class*="_img"] {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+
+.end_ad img.feature_img {
     
+}
+
+
+.end_ad_text_wrap {
+    position: absolute;
+    /* bottom:0;
+    padding-left: 30px;
+    padding-bottom: 30px; */
+}
+
+.end_ad [class*="_text_wrap"] header {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.end_ad h2, .end_ad p {
+    color: white;
+    text-align: center;
+    max-width: unset;
+}
+
+.end_ad [class*="_text_wrap"] h2 {
+    width: 70%;
+    margin-bottom: 0;
+}
+
+.end_ad [class*="_text_wrap"] p {
+    width: 62.5%;
+}
+@media screen and (max-width: 36rem) {
+    .end_ad [class*="_text_wrap"] p {
+        width: 90%;
+    }
+}    
 
 /*  =======================================
     MEDIA QUERIES
