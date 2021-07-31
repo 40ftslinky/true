@@ -219,13 +219,20 @@ img.feature_img {
         max-height: 80vh;
         aspect-ratio: 16 / 9;
     }
-    @media screen and (max-width: 48em) {
-        #cs_video .cs_video_img  {
-            width: 100%;
-            object-fit: cover;
-            aspect-ratio: 16 / 9;
+    /* aspect ratio legacy browser support */
+    @supports not (aspect-ratio: 16 / 9) {
+        #cs_video .cs_video_img::before {
+          float: left;
+          padding-top: 100%;
+          content: "";
         }
-    }
+      
+        #cs_video .cs_video_img::after {
+          display: block;
+          content: "";
+          clear: both;
+        }
+      }
 
 
     .cs_video_text_wrap {
