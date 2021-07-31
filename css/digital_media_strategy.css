@@ -216,8 +216,17 @@ img.feature_img {
     #cs_video .cs_video_img  {
         width: 100%;
         object-fit: cover;
-        height: 80vh;
+        max-height: 80vh;
+        aspect-ratio: 16 / 9;
     }
+    @media screen and (max-width: 48em) {
+        #cs_video .cs_video_img  {
+            width: 100%;
+            object-fit: cover;
+            aspect-ratio: 16 / 9;
+        }
+    }
+
 
     .cs_video_text_wrap {
         position: absolute;
