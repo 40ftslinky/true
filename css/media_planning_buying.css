@@ -45,14 +45,24 @@
 
     #intro_mpd {}
 
+    #intro_mpd .col_wrap {
+        align-items: flex-start;
+        gap:0;
+    }
+    #intro_mpd h2 {
+        margin-top: 0;
+    }
     #intro_mpd  .col_feature:first-of-type {
-        width: 65%;
+        width:50%
     }
     #intro_mpd  .col_feature:nth-of-type(2) {
-        width: 35%;
+        width: 50%;
+        padding-left: 7.5%;
+        padding-right: 7.5%;
+
     }
     #intro_mpd img {
-        margin-top: -5%;
+        /* margin-top: -5%; */
     }
 
 
