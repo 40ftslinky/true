@@ -1,0 +1,94 @@
+/* ========================================================================== */
+/* capabilities.css */
+/* ========================================================================== */
+
+#capabilities {}
+
+
+#hero_capabilities {
+    margin-top: var(--header-height);
+
+}
+
+.hero_capabilities_text_wrap {}
+.hero_capabilities_title {}
+
+
+.hero_capabilities_text_wrap  {
+    width: 100%;
+    /* min-height: 60vh; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero_capabilities_text_wrap h1 {
+    max-width: 90%;
+    text-align: center;
+}
+.hero_capabilities_text_wrap p {
+    max-width: 70%;
+    text-align: center;
+}
+
+@media screen and (max-width: 48em) {
+    .hero_capabilities_text_wrap h1, .hero_capabilities_text_wrap p {
+        max-width: 90vw;
+        text-align: left;
+    }
+}
+
+
+/*  =======================================
+    FOUR COL
+    =================================== */
+
+    .four_col {
+        width:100%;
+        align-content: flex-start;
+        align-items: flex-start;
+    }
+    @media screen and (max-width: 48em) {
+        .four_col {
+            width: 90%;
+            flex-wrap: wrap;
+            flex-direction: row;
+        }
+        .four_col .col_feature {
+            width: 47.5%;
+        }
+    }
+
+    @media screen and (max-width: 36em) {
+        .four_col {
+            flex-direction: column;
+        }
+        .four_col .col_feature {
+            width: 100%;
+        }
+    }
+
+    .four_col h4 {
+        margin-left: 45px;
+        margin-bottom: 1.5rem;
+    }
+
+
+    .four_col h4::before {
+        content: '';
+        background-size: contain;
+        background-repeat: no-repeat;
+        margin-left: -50px;
+        margin-top: -10px;
+        width:36px;
+        height: 33px;
+        position: absolute;
+    }
+    
+    /* .four_col h4.advertising::before { background-image: url(../img/dinkus/advertising.svg); } */
+    .four_col h4.advertising::before { background-image: url(../img/dinkus/ad.svg); }
+    .four_col h4.digital_media::before { background-image: url(../img/dinkus/digital_media.svg); }
+    .four_col h4.content_creation::before { background-image: url(../img/dinkus/content_creation.svg); }
+    .four_col h4.social_media::before { background-image: url(../img/dinkus/social_media.svg); }
+    
