@@ -233,10 +233,15 @@
         min-width: 100%;
         height:67vh;
     }
-    
+    @media screen and (max-width: 48em) {
+        #endorsements [class*="_img_wrap"] {
+            max-height: 50vh;
+        }
+    }
     
    #endorsements img[class*="_img"] {
         width: 100%;
+        height: inherit;
         object-fit: cover;
     }
     @media screen and (max-width: 48em) {

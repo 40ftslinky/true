@@ -1,0 +1,98 @@
+/* ========================================================================== */
+/* media_planning_buying.css */
+/* ========================================================================== */
+
+#media_planning_buying {}
+
+
+#hero_mpd {
+    margin-top: var(--header-height);
+
+}
+
+.hero_mpd_text_wrap {}
+.hero_mpd_title {}
+
+
+.hero_mpd_text_wrap  {
+    width: 100%;
+    /* min-height: 60vh; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero_mpd_text_wrap h1 {
+    max-width: 90%;
+    text-align: center;
+}
+.hero_mpd_text_wrap p {
+    max-width: 70%;
+    text-align: center;
+}
+
+@media screen and (max-width: 48em) {
+    .hero_mpd_text_wrap h1, .hero_mpd_text_wrap p {
+        max-width: 90vw;
+        text-align: left;
+    }
+}
+
+/*  =======================================
+    INTRO MPD
+    =================================== */
+
+    #intro_mpd {}
+
+    #intro_mpd  .col_feature:first-of-type {
+        width: 65%;
+    }
+    #intro_mpd  .col_feature:nth-of-type(2) {
+        width: 35%;
+    }
+    #intro_mpd img {
+        margin-top: -5%;
+    }
+
+
+/*  =======================================
+    Planning & Buying SECTION
+    =================================== */
+
+    .pb_sect {}    
+    .pb_header_wrap {
+        width: 100%;
+    }
+
+    .pb_caption  {
+        
+        text-align: left;
+    }
+
+
+/*  =======================================
+    RATES
+    =================================== */
+
+    #rates.two_col {
+        flex-direction: column;
+    }
+    .rates_header_wrap {
+        flex-direction: row;
+    }
+    .rates_title  {
+        text-align: center;
+        margin-bottom: 3rem;
+    }
+    #rates .col_wrap {
+        align-items: flex-start;
+    }
+
+/*  =======================================
+    DATA
+    =================================== */    
+
+    .two_col .col_feature {        
+        margin-bottom: 5%;
+    }
