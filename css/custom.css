@@ -156,6 +156,11 @@
         position: relative;
         width: 100%;
     }
+    @media screen and (max-width: 48em) {
+        .col_feature {
+            margin-bottom: 5%;
+        }
+    }
     
     .two_col .col_feature {
         width: 50%;

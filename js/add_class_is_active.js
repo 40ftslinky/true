@@ -2,15 +2,21 @@
 
 jQuery(document).ready(function( $ ) {
     //  desktop accordian
-    $(".breakdown_dms_list_title").click(function(){
+    $("[class*='_list_title']").click(function(){
         $(this).parent().toggleClass("is-active");
         $(this).next("p").slideToggle();
+        $(this).next("div").slideToggle();
         // if (jQuery(this).hasClass("is-active")){
         //     $(this).next("p").slideDown();	 
         // }
         // else {
         //     $(this).next("p").slideUp();
         // }
+    });
+
+    $("#quiz .btn").click(function(){
+        $(this).parent().toggleClass("is-active");
+        // $(".is-active .false").css("display : none")
     });
 
     $("#burger-check").change(function(){
@@ -31,11 +37,8 @@ jQuery(document).ready(function( $ ) {
 
     $(".menu_list .menu-link").on("click", function() {
         $(this).next(".menu_dropdown").slideToggle();
-        // $(".menu-link").find(".is-active").remove("is-active");
         $(this).toggleClass("is-active");
         
-        // Ross   changes  27/7/21
-        // set counter
 		var count_active = 0;			
 		// loops through all a links in menu
 		var list_links = jQuery("#nav .menu_list .menu_item .menu-link");
