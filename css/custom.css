@@ -402,6 +402,7 @@
         transition: all 0.25s ease-in-out;
     }
 
+    [class*="_list_title"] + div, 
     [class*="_list_title"] + p {
         display: none;
         padding: 1% 5% 2.5% ;
