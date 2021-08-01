@@ -1,1 +1,19 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="21.014" height="18.651"><g data-name="DMS ICON" transform="translate(.5 .5)" fill="none" stroke="#000" stroke-miterlimit="10"><circle data-name="Ellipse 4" cx="4.948" cy="4.948" transform="translate(5.081 3.878)" r="4.948"/><path data-name="Path 275" d="M0 6.24V0h7.533"/><path data-name="Path 276" d="M12.525 0h7.488v6.24"/><path data-name="Path 277" d="M20.013 11.366v6.285h-7.488"/><path data-name="Path 278" d="M7.533 17.651H0v-6.285"/></g></svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="28.121" height="28.095" viewBox="0 0 28.121 28.095">
+  <g id="Group_1420" data-name="Group 1420" transform="translate(-984.113 -809.932)">
+    <g id="Group_1415" data-name="Group 1415" transform="translate(986.431 812.059)">
+      <circle id="Ellipse_43" data-name="Ellipse 43" cx="1.078" cy="1.078" r="1.078" fill="#6ac6b7"/>
+    </g>
+    <g id="Group_1416" data-name="Group 1416" transform="translate(989.464 812.059)">
+      <circle id="Ellipse_44" data-name="Ellipse 44" cx="1.078" cy="1.078" r="1.078" fill="#6ac6b7"/>
+    </g>
+    <g id="Group_1417" data-name="Group 1417" transform="translate(992.373 812.059)">
+      <circle id="Ellipse_45" data-name="Ellipse 45" cx="1.078" cy="1.078" r="1.078" fill="#6ac6b7"/>
+    </g>
+    <g id="Group_1418" data-name="Group 1418" transform="translate(984.113 809.932)">
+      <path id="Path_2388" data-name="Path 2388" d="M996.636,838.026H984.113V809.932h28.121v21.559h-.587V810.906H984.7v26.147h11.936Z" transform="translate(-984.113 -809.932)"/>
+    </g>
+    <g id="Group_1419" data-name="Group 1419" transform="translate(984.6 815.9)">
+      <rect id="Rectangle_199" data-name="Rectangle 199" width="27.634" height="0.974"/>
+    </g>
+  </g>
+</svg>
