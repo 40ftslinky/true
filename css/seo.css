@@ -107,7 +107,7 @@
     }
 
 
-    .two_col [class*="_text_wrap"] [class*="_list_title"]  {
+    .two_col [class*="_text_wrap"] [class*="_title"]  {
         /* min-width: calc(47.5vw / 2 );
         max-width: calc(47.5vw / 2 ); */
         width: 100%;
@@ -212,6 +212,7 @@
         max-width: 65%;
         text-align: left;
         color: white;
+        margin-top: 0;
         margin-bottom: 1.5rem;
     }
     @media screen and (max-width: 48em) {
