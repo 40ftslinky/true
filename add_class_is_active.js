@@ -5,6 +5,7 @@ jQuery(document).ready(function( $ ) {
     $("[class*='_list_title']").click(function(){
         $(this).parent().toggleClass("is-active");
         $(this).next("p").slideToggle();
+        $(this).next("div").slideToggle();
         // if (jQuery(this).hasClass("is-active")){
         //     $(this).next("p").slideDown();	 
         // }
