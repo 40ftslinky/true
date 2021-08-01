@@ -7,10 +7,10 @@
 
 
 /*  =======================================
-    hero_mpd
+    hero_dms
     =================================== */
 
-    #hero_mpd {
+    #hero_dms {
         margin-top: var(--header-height);
         /* min-height: 100vh; */
          /* min-height: calc(100vh - var(--header-height)); */
@@ -22,36 +22,36 @@
         align-items: center;
     }
     @media screen and (max-width: 48em) {
-        #hero_mpd {
+        #hero_dms {
             margin-top: var(--header-height);
             /* min-height: 100vh; */
         }
     }
     
-    #hero_mpd .col_wrap {
+    #hero_dms .col_wrap {
         padding-left: 7.5%;
         padding-right: 7.5%;
     }
     @media screen and (max-width: 48em) {
-        #hero_mpd .col_wrap {
+        #hero_dms .col_wrap {
             padding-left: 0;
             padding-right: 0;
         }
     }
      
-    .hero_mpd_text_wrap {
-        /* align-items: flex-start; */
+    .hero_dms_text_wrap {
+        align-items: flex-start;
     }
-    .hero_mpd_text_wrap p {
-        text-align: center;
+    .hero_dms_text_wrap p {
+        /* text-align: center; */
     }
 
 
-    #hero_mpd .col_feature_img_wrap {
+    #hero_dms .col_feature_img_wrap {
         margin-top: 30%;
     }
     @media screen and (max-width: 48em) {
-        #hero_mpd .col_feature_img_wrap {
+        #hero_dms .col_feature_img_wrap {
             margin-top: 10%;
         }
     }

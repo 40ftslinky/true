@@ -1,0 +1,108 @@
+/* ========================================================================== */
+/* creative.css */
+/* ========================================================================== */
+
+#creative {}
+
+
+#hero_creative {
+    margin-top: var(--header-height);
+
+}
+
+.hero_creative_text_wrap {}
+.hero_creative_title {}
+
+
+.hero_creative_text_wrap  {
+    width: 100%;
+    /* min-height: 60vh; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero_creative_text_wrap h1 {
+    max-width: 90%;
+    text-align: center;
+}
+.hero_creative_text_wrap p {
+    max-width: 70%;
+    text-align: center;
+}
+
+@media screen and (max-width: 48em) {
+    .hero_creative_text_wrap h1, .hero_creative_text_wrap p {
+        max-width: 90vw;
+        text-align: left;
+    }
+}
+
+/*  =======================================
+    creative TWO COL
+    =================================== */
+
+    #creative_two_col {}
+
+    #creative_two_col .col_wrap,
+    #creative_campaign .col_wrap,
+    #video_two_col .col_wrap {
+        width: 80%;
+        align-items: flex-start;
+    }
+    @media screen and (max-width: 48em) {
+        #creative_two_col .col_wrap,
+        #creative_campaign .col_wrap,
+        #video_two_col .col_wrap {
+            width: 100%;
+        }
+    }
+
+
+    #creative_campaign h2 {
+        margin-top: 0;
+    }
+
+
+/*  =======================================
+    content grid
+    =================================== */
+
+    .content_title {
+        width: 57%;
+    }
+    @media screen and (max-width: 48em) {
+        .content_title {
+            width: 100%;
+        }
+    }
+
+
+    .content_img_grid_wrap {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1% 1%;
+    }
+    .content_img_wrap {
+        width: calc(100% / 3 - 2%);
+        min-width: unset;
+        margin-bottom: 1%;
+    }
+    /* @media screen and (max-width: 48em) {
+        .content_img_wrap {
+            width: calc(100% / 2 - 1%);
+        }
+    }
+    @media screen and (max-width: 36em) {
+        .content_img_wrap {
+            width: 100%;
+        }
+    } */
+    .content_img {
+        width: 100%;
+    }
+
+
