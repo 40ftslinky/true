@@ -106,7 +106,10 @@
         }
     }
 
-
+    #ss_content  [class*="_text_wrap"] {
+        padding: 0;
+    }
+    
     .two_col [class*="_text_wrap"] [class*="_title"]  {
         /* min-width: calc(47.5vw / 2 );
         max-width: calc(47.5vw / 2 ); */
@@ -129,7 +132,7 @@
 
 
     /*  =======================================
-        fwbo_sect
+        #seo fwbo_sect
         =================================== */
 
     /*  */
@@ -156,35 +159,14 @@
         }
     }
 
-    .fwbo_wrap::before { 
-        content: "";  
-        /* :before and :after both require content */
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        /* background-image: linear-gradient(20deg,rgba(0,0,0,0.4),rgba(0,0,0,0)); */
-        opacity: .7;
-    }
-
-
     img.fwbo_img {
         width: 100%;
         object-fit: cover;
     }
     .one_col_feature img.fwbo_img {
-        /* min-height: calc(100vh - var(--header-height)); */
         height: 63vh;
         object-fit: cover;
         object-position: bottom right;
-    }
-
-    @media screen and (max-width: 48em) {
-        /* 768px */
-        .one_col_feature img.fwbo_img {
-            /* height: calc(100vh - var(--header-height)); */
-        }
     }
 
     .fwbo_text_wrap {
