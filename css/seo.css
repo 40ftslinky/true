@@ -102,14 +102,14 @@
     }
     @media screen and (max-width: 36em) {
         #ss_content .col_wrap {
-            width: 100%;
+            width: 100 %;
         }
     }
 
     #ss_content  [class*="_text_wrap"] {
         padding: 0;
     }
-    
+
     .two_col [class*="_text_wrap"] [class*="_title"]  {
         /* min-width: calc(47.5vw / 2 );
         max-width: calc(47.5vw / 2 ); */

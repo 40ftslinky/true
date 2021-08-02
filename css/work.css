@@ -1,0 +1,210 @@
+/* ========================================================================== */
+/* work.css */
+/* ========================================================================== */
+
+#work {}
+
+
+#hero_work {
+    margin-top: var(--header-height);
+
+}
+
+.hero_work_text_wrap {}
+.hero_work_title {}
+
+
+.hero_work_text_wrap  {
+    width: 100%;
+    /* min-height: 60vh; */
+    display: flex;
+    flex-direction: column;
+    justify-work: center;
+    align-items: center;
+}
+
+.hero_work_text_wrap h1 {
+    max-width: 90%;
+    text-align: center;
+}
+.hero_work_text_wrap p {
+    max-width: 70%;
+    text-align: center;
+}
+
+@media screen and (max-width: 48em) {
+    .hero_work_text_wrap h1, .hero_work_text_wrap p {
+        max-width: 90vw;
+        text-align: left;
+    }
+}
+
+/* ------------------------------------------------- */
+/* work_cs grid */
+/* ------------------------------------------------- */
+
+
+.work_cs_feature {
+    width: calc(100% / 3 - 1%);
+}
+
+.work_cs_feature_wrap {
+    position: relative;
+}
+
+.work_cs_feature_img_wrap{
+    width: 100%;
+}
+
+.work_cs_feature_img_wrap::before { 
+    content: "";  
+    /* :before and :after both require content */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* background-image: linear-gradient(20deg,rgba(0,0,0,0.4),rgba(0,0,0,0)); */
+    opacity: .7;
+}
+
+
+img.work_cs_feature_img {
+    width: 100%;
+    object-fit: cover;
+    aspect-ratio: 1 / 1;
+}
+.one_col_feature img.work_cs_feature_img {
+    min-height: 80vh;
+}
+@media screen and (max-width: 48em) {
+    .one_col_feature img.work_cs_feature_img {
+        min-height: 100vw;
+    }
+}
+
+.two_col_feature img.work_cs_feature_img {
+    width: 100%;
+    /* height: calc(60vh + 5%); */
+    object-fit: cover;
+}
+
+.work_cs_feature_text_wrap {
+    position: absolute;
+    height: 100%;
+    bottom:0;
+    padding: 2vw;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+@media screen and (max-width: 48em) {
+    .work_cs_feature_text_wrap {
+        padding: 5vw;
+    }
+}
+
+@media screen and (max-width: 48em){
+    [class*="work_cs_feature"] h1[class*="_title"], 
+    [class*="work_cs_feature"] [class*="_text_wrap"], 
+    .subtitle {
+        width: 100%;
+        max-width: 90vw;
+    }
+}
+
+
+.work_cs_title {
+    margin: 0;
+
+}
+
+h5.work_cs_type {
+    font-size: 19px;
+    font-size: min(max(14px, 1.13vw), 19px);
+    font-family: var(--font-family-Aktiv);
+}
+
+.work_cs_title, .work_cs_type, .work_cs_copy {
+    color: white;
+    margin: 0;
+}
+
+/* ------------------------------------------------- */
+/* work grid */
+/* ------------------------------------------------- */
+
+.work_img_grid_wrap {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: space-between;
+    align-items: center;
+    gap: 1.5% 0.5%;
+}
+[class*="work_cs_"] [class*="_img_wrap"] {
+    min-width: unset;
+    margin-bottom: 1%;
+}
+.work_cs_feature {
+    /* width: calc(98%  / 3); */
+    width: 33%;
+}
+.work_cs_feature:nth-of-type(4),
+.work_cs_feature:nth-of-type(7) {
+    /* width: calc(99% * (2 / 3)); */
+    width: 66.4%;
+}
+
+
+.work_cs_feature:nth-of-type(4) img[class*="_img"],
+.work_cs_feature:nth-of-type(7) img[class*="_img"] {
+    width: 100%;
+    aspect-ratio: 66.5 / 33;
+    /* aspect-ratio: calc(99 * (2 / 3)) / calc(98  / 3); */
+    
+}
+
+@media screen and (max-width: 48em) {
+    .work_cs_feature {
+        width: 100%;
+    }
+    .work_cs_feature:nth-of-type(4),
+    .work_cs_feature:nth-of-type(7) {
+        /* width: calc(99% * (2 / 3)); */
+        width: 100%;
+    }
+    .work_cs_feature img[class*="_img"]{
+        aspect-ratio: 2 / 1;
+    }
+    /* .work_cs_feature:nth-of-type(4) img[class*="_img"],
+    .work_cs_feature:nth-of-type(7) img[class*="_img"]{
+        aspect-ratio: 1 / 1;
+    } */
+
+}
+
+/* HOVER STATE */
+
+.work_cs_feature_text_wrap {
+    opacity: 0;
+    /*  */
+    -webkit-transition: all 0.5s ease-out;
+    -moz-transition: all 0.5s ease-out;
+    -o-transition: all 0.5s ease-out;
+    transition: all 0.5s ease-out;
+}
+
+.work_cs_feature:hover .work_cs_feature_text_wrap {
+    opacity: 1;
+}
+
+
+.work_cs_feature_img_wrap::before { 
+    background-image: linear-gradient(0deg,rgba(0,0,0,0.0),rgba(0,0,0,0));
+    
+}
+
+.work_cs_feature:hover .work_cs_feature_img_wrap::before { 
+    background-image: linear-gradient(0deg,rgba(0,0,0,0.7),rgba(0,0,0,7));
+}

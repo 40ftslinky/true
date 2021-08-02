@@ -68,16 +68,12 @@
 .content_img {
     width: 100%;
     aspect-ratio: 1 / 1;
+    object-fit: cover;
 }
-:root {
-   --width:calc( ((100% * (2 / 3) - 2%) * 6) );
-   --height:calc( ((100% * (2 / 3) - 2%) * 3) ); 
-}
+
 .content_img_wrap:nth-of-type(2) .content_img,
 .content_img_wrap:nth-of-type(3) .content_img,
 .content_img_wrap:nth-of-type(5) .content_img {
     width: 100%;
-    aspect-ratio: 6 / 3;
-    /* aspect-ratio: var(--width) / var(--height); */
-    /* aspect-ratio:calc( ((100% * (2 / 3) - 2%) * 6) / ((100% * (2 / 3) - 2%) * 3) ); */
+    aspect-ratio: 2 / 0.965;
 }
