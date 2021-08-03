@@ -70,7 +70,7 @@
     }
 
     .video-btn {
-        padding-right: 4rem;
+        padding-right: 3rem;
     }
     .video-btn::after {
         content: '';
@@ -79,10 +79,9 @@
         height: 14px;
         top: 50%;
         right: 0;
-        /* translateY: -50%; */
         transform: translateY(-50%);
-        background-image: url('../img/dinkus/play_arrow.svg');
-        /* background-image: url(data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2013.81883%2015.27917%22%3E%3Cpolygon%20points%3D%220.5%2014.431%200.5%200.848%2012.785%207.639%200.5%2014.431%22%20fill%3D%22none%22%20stroke%3D%22%232b2e34%22%2F%3E%3C%2Fsvg%3E); */
+        /* background-image: url('../img/dinkus/play_arrow.svg'); */
+        background-image: url(data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2013.81883%2015.27917%22%3E%3Cpolygon%20points%3D%220.5%2014.431%200.5%200.848%2012.785%207.639%200.5%2014.431%22%20fill%3D%22none%22%20stroke%3D%22%232b2e34%22%2F%3E%3C%2Fsvg%3E);
         background-repeat: no-repeat;
         /* padding-left: 2rem; */
         margin-right: 1rem;
@@ -99,7 +98,7 @@
         background: var(--white-hover);
     }
     .btn-black {
-        background: #111;
+        background: var(--main-black);
         color: #fff;
     }
     .btn-black:hover {

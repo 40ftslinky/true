@@ -4,19 +4,19 @@
     =================================== */
 
     ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
-        color: rgba(255,255,255,.8);
+        color: rgba(var(--white-rgb),.8);
         font-family: var(--font-family-Aktiv);
     }
     ::-moz-placeholder { /* Firefox 19+ */
-        color: rgba(255,255,255,.8);
+        color: rgba(var(--white-rgb),.8);
         font-family: var(--font-family-Aktiv);
     }
     :-ms-input-placeholder { /* IE 10+ */
-        color: rgba(255,255,255,.8);
+        color: rgba(var(--white-rgb),.8);
         font-family: var(--font-family-Aktiv);
     }
     :-moz-placeholder { /* Firefox 18- */
-        color: rgba(255,255,255,.8);
+        color: rgba(var(--white-rgb),.8);
         font-family: var(--font-family-Aktiv);
     }
 
@@ -30,19 +30,22 @@
     
     #form.form {
         box-sizing: border-box;
+        width: 100%;
+        max-width: 320px;
     }
 
     #form .form_row {
         position: relative;
         margin-bottom: 2rem;
     }
-
+/* 
     #form label, #form input {
         display: block;
         width:100%;
-    }
+    } 
+*/
 
-
+/* 
     #form label {
         color: white;
         font-family: var(--font-family-Aktiv);
@@ -52,13 +55,16 @@
         transform-origin: left;
         transition: all 0.2s ease-in-out;
     }
+ */
+    
 
     #form input[type="text"],
     #form input[type="email"],
     #form input[type="number"], 
     #form input[name="message"] {
         width: 100%;
-        padding: 0.5rem 1rem 0.5rem 0;
+        padding: 0.5rem;
+        /* padding: 0.5rem 1rem 0.5rem 0; */
         /* font-size: 1rem; */
         font-size: 13px;
         line-height: inherit;
@@ -68,21 +74,28 @@
         border: none;
         box-sizing: border-box;
         /* background:transparent; */
-        border-bottom:2px solid rgba(255,255,255,.8);
+        border-bottom:1px solid rgba(var(--white-rgb),0.8);
         background: rgba(0, 0, 0, 0);
         transition: all 0.2s ease-in-out;
         border-radius: unset;
     }
 
+/* 
     #form input + label {
         position: absolute;
         left: 0;
         top:0;
         transform: scale(1);
         transition: all 0.2s ease-in-out;
-        /* You have to use this to make it clickable through*/
+    } 
+*/
+
+    /* You have to use this to make it clickable through*/
+/* 
+    #form input + label {
         pointer-events: none;
-    }
+    } 
+*/
 
     #form input[type="email"]:focus, 
     #form input[type="number"]:focus, 
@@ -90,19 +103,48 @@
     #form input[type="text"]:focus, 
     #form input[type="tel"]:focus, 
     #form input[type="url"]:focus, 
-    #form input[type="password"]:focus, 
+    #form input[type="password"]:focus,
+    #form input[name="message"]:focus 
     #form textarea:focus, 
     #form select:focus {
         border: none;
         outline: 0;
-        background: var(--white-30);
-        /* background: var(--vlight_grey); */
-        border-bottom:2px solid var(--white-50);
+        background: rgba(var(--white-rgb),0.3);
+        border-bottom:2px solid rgba(var(--white-rgb),0.5);
         outline: none;
         padding-left: 1rem;
 
     }
 
+    #form textarea {
+        width: 100%;
+        padding: 0.5rem;
+        font-size: 13px;
+        line-height: inherit;
+        letter-spacing: .2;
+        color: white;
+        font-family: var(--font-family-Aktiv);
+        box-sizing: border-box;
+        border:1px solid rgba(var(--white-rgb),0.8);
+        background: rgba(0, 0, 0, 0);
+        transition: all 0.2s ease-in-out;
+        border-radius: unset;
+    }
+
+    #form textarea:focus {
+        border: none;
+        outline: 0;
+        background: rgba(var(--white-rgb),0.3);
+        /* background: var(--vlight_grey); */
+        border-bottom:2px solid rgba(var(--white-rgb),0.5);
+        outline: none;
+        padding-left: 1rem;
+    }
+
+    /* placeholder needs to have something in it - a space will do eg: placeholder=" " */
+    /* Use "Translate" function instead of classic positioning for better performance */
+    /* transform: translateY(-3em); */
+/*     
     #form select:focus-within + label,
     #form input:focus-within + label,
     #form textarea:focus-within + label,
@@ -112,19 +154,19 @@
     #form input[type="text"]:focus-within + label, 
     #form input[type="email"]:focus-within + label,
     #form input[name="message"]:focus-within + label,
-    #form input:not(:placeholder-shown) + label { /* placeholder needs to have something in it - a space will do eg: placeholder=" " */
-        /* font-size: 0.7em; */
+    #form input:not(:placeholder-shown) + label { 
         color: var(--not-white);
         font-weight: 400;
         transform: scale(0.8);
         top: -37px;
-        /* Use "Translate" function instead of classic positioning for better performance */
-        /* transform: translateY(-3em); */
     }
+*/
 
     #form input:focus {
-        background: var(--white-30);
+        background: rgba(var(--white-rgb),0.3);
         border-bottom:2px solid var(--white);
         outline: none;
     }
 
+    #form input[type="textarea"]
+    #form input[name="message"] {}
