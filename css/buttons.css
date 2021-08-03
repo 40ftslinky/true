@@ -132,3 +132,8 @@
             max-width: 320px; */
         }
     }
+
+
+    [class*="_text_wrap"] :not(.btns_wrap) .btn {
+        margin: 1.5rem 0;
+    }

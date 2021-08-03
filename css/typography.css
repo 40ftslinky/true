@@ -176,6 +176,9 @@ h2.growth_title {
     margin-bottom: 0.5rem;
     letter-spacing: 0;
 }
+h4 span {
+    font-family: var(--font-family-header);
+}
 
 h4.category {
     /* font-family: var(--font-family); */

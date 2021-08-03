@@ -82,6 +82,7 @@
         width: 100%;
         max-width: 51vw;
         text-align: left; 
+        margin-top: 1rem;
     }
 
     @media screen and (max-width: 1080px) {
@@ -133,6 +134,9 @@
         min-width: 47.5vw;
         max-width: 47.5vw;
         width: 100%;
+    }
+    #breakdown_dms h2.breakdown_dms_title  {
+        margin-bottom: 1.5rem;
     }
 
     #breakdown_dms [class*="_text_wrap"].left p {
