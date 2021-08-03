@@ -1,0 +1,166 @@
+/* ========================================================================== */
+/* programmatic.css */
+/* ========================================================================== */
+
+#programmatic {}
+
+
+#hero_prog {
+    margin-top: var(--header-height);
+
+}
+
+.hero_prog_text_wrap {}
+.hero_prog_title {}
+
+
+.hero_prog_text_wrap  {
+    width: 100%;
+    /* min-height: 60vh; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero_prog_text_wrap h1 {
+    max-width: 90%;
+    text-align: center;
+}
+.hero_prog_text_wrap p {
+    max-width: 70%;
+    text-align: center;
+}
+
+@media screen and (max-width: 48em) {
+    .hero_prog_text_wrap h1, .hero_prog_text_wrap p {
+        max-width: 90vw;
+        text-align: left;
+    }
+}
+
+
+/*  =======================================
+    #programmatic fwbo_sect
+    =================================== */
+
+    /*  */
+
+    section#fwbo_sect, 
+    section#fwbo_sect article  {
+        margin: auto;
+        max-width: unset;
+        width: 100vw;
+    }
+    section#fwbo_sect {
+        margin-bottom: 5rem;
+    }
+
+    .fwbo_wrap {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    @media screen and (max-width: 48em) {
+        .fwbo_wrap {
+            align-items: flex-start;
+        }
+    }
+
+    #programmatic img.fwbo_img {
+        width: 100%;
+        object-fit: cover;
+    }
+    .one_col_feature img.fwbo_img {
+        /* height: 63vh; */
+        object-fit: cover;
+        object-position: bottom right;
+    }
+
+
+    #programmatic .fwbo_text_wrap {
+        /* width: 50%;
+        margin-left: 50%; */
+        position: absolute;
+        z-index: 22;
+        /*  */
+        align-items: center;
+    }
+    
+    @media screen and (max-width: 48em) {
+        #programmatic .fwbo_text_wrap {
+            padding-top: 5%;
+            padding-bottom: 5%;
+            height: 100%;
+            width: 82%;
+            margin-left: unset;
+            align-items: center;
+        }
+    }
+
+
+    #programmatic .fwbo_text_wrap h2 {
+        max-width: 22%;
+        text-align: center;
+        /* color: white; */
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+    @media screen and (max-width: 48em) {
+        #programmatic .fwbo_text_wrap h2 {
+            max-width: unset;
+        }
+    }
+
+
+/*  =======================================
+    #programmatic fwbo_sect second
+    =================================== */
+
+    /*  */
+
+    
+    #programmatic .second img.fwbo_img {
+        height: 63vh;
+        object-fit: cover;
+        object-position: bottom right;
+    }
+
+    #programmatic .second .fwbo_text_wrap {
+        width: 50%;
+        margin-left: 50%;
+        position: absolute;
+        z-index: 22;
+        /*  */
+        align-items: flex-start;
+    }
+    
+    @media screen and (max-width: 48em) {
+        #programmatic .second .fwbo_text_wrap {
+            padding-top: 5%;
+            padding-bottom: 5%;
+            height: 100%;
+            width: 80%;
+            margin-left: unset;
+            align-items: center;
+        }
+    }
+
+
+    #programmatic .second .fwbo_text_wrap h2,
+    #programmatic .second .fwbo_text_wrap p {
+        max-width: 65%;
+        text-align: left;
+        color: white;
+        margin-top: 0;
+        margin-bottom: 1.5rem;
+    }
+    @media screen and (max-width: 48em) {
+        #programmatic .second .fwbo_text_wrap h2,
+        #programmatic .second .fwbo_text_wrap p {
+            max-width: unset;
+            width: 100%;
+        }
+    }
+        

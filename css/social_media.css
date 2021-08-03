@@ -1,0 +1,182 @@
+/* ========================================================================== */
+/* social_media.css */
+/* ========================================================================== */
+
+#social_media {}
+
+
+
+/*  =======================================
+    social_media
+    =================================== */
+
+    #hero_social_media {
+        margin-top: var(--header-height);
+        /* min-height: 100vh; */
+         /* min-height: calc(100vh - var(--header-height)); */
+         margin-bottom: 3rem;
+        /*  */
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    @media screen and (max-width: 48em) {
+        #hero_social_media {
+            margin-top: var(--header-height);
+            /* min-height: 100vh; */
+        }
+    }
+    
+    #hero_social_media .col_wrap {
+        padding-left: 7.5%;
+        padding-right: 7.5%;
+    }
+    @media screen and (max-width: 48em) {
+        #hero_social_media .col_wrap {
+            padding-left: 0;
+            padding-right: 0;
+        }
+    }
+     
+    .hero_social_media_text_wrap {
+        align-items: flex-start;
+    }
+
+    .hero_social_media_text_wrap h1 {
+        font-size: 63px;
+        font-size: min(max(36px, 3.28vw), 63px);
+    }
+
+    .hero_social_media_text_wrap p {
+        /* text-align: center; */
+    }
+
+
+    #hero_social_media .col_feature_img_wrap {
+        margin-top: 30%;
+    }
+    @media screen and (max-width: 48em) {
+        #hero_social_media .col_feature_img_wrap {
+            margin-top: 10%;
+        }
+    }
+
+/*  =======================================
+    INTRO_social
+    =================================== */
+
+    #intro_social .col_wrap {
+        padding-left: 7.5%;
+        padding-right: 7.5%;
+    }
+    @media screen and (max-width: 48em) {
+        #intro_social .col_wrap {
+            padding-left: 0;
+            padding-right: 0;
+        }
+    }
+
+    .intro_social_text_wrap h1 {
+        max-width: 90%;
+        text-align: center;
+    }
+    .intro_social_text_wrap h2.intro_social_title {
+        max-width: 70%;
+        text-align: center;
+        margin-top: 1em;
+    }
+    .intro_social_text_wrap p {
+        max-width: 70%;
+        text-align: center;
+    }
+
+    #intro_social h4{
+        text-align: left; 
+        margin-bottom: 0;
+    }
+
+    #intro_social [class*="_text_wrap"].left p {
+        width: 100%;
+        max-width: 51vw;
+        text-align: left; 
+    }
+
+    @media screen and (max-width: 1080px) {
+        #intro_social [class*="_text_wrap"].left p {
+            max-width: 80vw;
+            width: 100%;
+        }
+    }    
+
+/*  =======================================
+    #social_media fwbo_sect 
+    =================================== */
+
+    /*  */
+
+    section#fwbo_sect, 
+    section#fwbo_sect article  {
+        margin: auto;
+        max-width: unset;
+        width: 100vw;
+    }
+    section#fwbo_sect {
+        margin-bottom: 5rem;
+    }
+
+    .fwbo_wrap {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    @media screen and (max-width: 48em) {
+        .fwbo_wrap {
+            align-items: flex-start;
+        }
+    }
+    
+    #social_media img.fwbo_img {
+        height: 63vh;
+        object-fit: cover;
+        object-position: bottom right;
+    }
+
+    #social_media .fwbo_text_wrap {
+        width: 50%;
+        margin-left: 50%;
+        position: absolute;
+        z-index: 22;
+        /*  */
+        align-items: flex-start;
+    }
+    
+    @media screen and (max-width: 48em) {
+        #social_media .fwbo_text_wrap {
+            padding-top: 5%;
+            padding-bottom: 5%;
+            height: 100%;
+            width: 80%;
+            margin-left: unset;
+            align-items: center;
+        }
+    }
+
+
+    #social_media .fwbo_text_wrap h2,
+    #social_media .fwbo_text_wrap p {
+        max-width: 65%;
+        text-align: left;
+        color: white;
+        margin-top: 0;
+        margin-bottom: 1.5rem;
+    }
+    @media screen and (max-width: 48em) {
+        #social_media .fwbo_text_wrap h2,
+        #social_media .fwbo_text_wrap p {
+            max-width: unset;
+            width: 100%;
+        }
+    }
+       
