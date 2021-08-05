@@ -1,0 +1,264 @@
+
+#pop_up {
+    max-width: 740px;
+    width:100%;
+    background-color: white;
+    position: absolute;
+    left: 50%;    
+    top: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 222;
+    padding: 2rem;
+    /*  */
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 2rem;
+}
+
+@media screen and (max-width: 1000px) {
+    #pop_up {        
+    padding: 2rem;
+    }
+}
+
+@media screen and (max-width: 48em) {
+    #pop_up {
+        flex-direction: column;
+        max-width: 90vw;
+        width: 420px;
+        padding: 1rem;
+        gap: 1rem;
+    }
+}
+.form_wrap {
+    width: 50%;
+}
+@media screen and (max-width: 48em) {
+    .form_wrap {
+        width: 100%;
+    }
+}
+
+#pop_up #form{
+    max-width: 420px;
+    /* width:100%; */
+}
+@media screen and (max-width: 48em) {
+    #pop_up #form.form {
+        max-width: unset !important;
+        width:100%;
+    }
+}
+.form_img_wrap {
+    height: 100%;
+}
+@media screen and (max-width: 48em) {
+    .form_img_wrap {
+        height: 10vh;
+    }
+}
+
+
+#pop_up [class*="_img"] {
+    max-width: 400px;
+    height: 100%;
+    object-fit: cover;
+}
+
+@media screen and (max-width: 1000px) {
+    #pop_up [class*="_img"] {
+        max-width: unset;
+        max-height: 15vh;
+        object-fit: cover;
+        aspect-ratio: unset;
+    }
+}
+
+
+/*  =======================================
+    POP UP FORM
+    =================================== */
+
+    #pop_up ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+        color: rgba(var(--main-black-rgb),0.8);
+        font-family: var(--font-family-Aktiv);
+    }
+    #pop_up ::-moz-placeholder { /* Firefox 19+ */
+        color: rgba(var(--main-black-rgb),0.8);
+        font-family: var(--font-family-Aktiv);
+    }
+    #pop_up :-ms-input-placeholder { /* IE 10+ */
+        color: rgba(var(--main-black-rgb),0.8);
+        font-family: var(--font-family-Aktiv);
+    }
+    #pop_up :-moz-placeholder { /* Firefox 18- */
+        color: rgba(var(--main-black-rgb),0.8);
+        font-family: var(--font-family-Aktiv);
+    }
+    #pop_up textarea::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+        color: rgba(var(--main-black-rgb),0.3);
+        font-family: var(--font-family-Aktiv);
+    }
+    #pop_up textarea::-moz-placeholder { /* Firefox 19+ */
+        color: rgba(var(--main-black-rgb),0.3);
+        font-family: var(--font-family-Aktiv);
+    }
+    #pop_up textarea:-ms-input-placeholder { /* IE 10+ */
+        color: rgba(var(--main-black-rgb),0.3);
+        font-family: var(--font-family-Aktiv);
+    }
+    #pop_up textarea:-moz-placeholder { /* Firefox 18- */
+        color: rgba(var(--main-black-rgb),0.3);
+        font-family: var(--font-family-Aktiv);
+    }
+
+
+    @media screen and (max-width: 48em) {
+        #pop_up #form.form {
+            display: block;
+        }
+    }
+    
+    #pop_up h2 {
+        margin-top: 0;
+    }
+
+    #pop_up h5 {
+        font-size: 19px;
+        font-size: min(max(14px, 1.13vw), 19px);
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+    
+    #pop_up #form.form {
+        box-sizing: border-box;
+        width: 100%;
+        max-width: 320px;
+    }
+
+    #pop_up #form .form_row {
+        position: relative;
+        margin-bottom: 1rem;
+    }
+    
+
+ #pop_up #form input[type="text"],
+ #pop_up #form input[type="email"],
+ #pop_up #form input[type="number"], 
+ #pop_up #form input[name="message"] {
+        width: 100%;
+        padding: 0.5rem;
+        /* padding: 0.5rem 1rem 0.5rem 0; */
+        /* font-size: 1rem; */
+        font-size: 13px;
+        line-height: inherit;
+        letter-spacing: .2;
+        color: rgba(var(--main-black),1.0);
+        font-family: var(--font-family-Aktiv);
+        border: none;
+        box-sizing: border-box;
+        /* background:transparent; */
+        border-bottom:1px solid rgba(var(--main-black-rgb),0.8);
+        background: rgba(var(--main-black-rgb), 0);
+        transition: all 0.2s ease-in-out;
+        border-radius: unset;
+    }
+
+
+#pop_up #form input[type="email"]:focus, 
+#pop_up #form input[type="number"]:focus, 
+#pop_up #form input[type="search"]:focus, 
+#pop_up #form input[type="text"]:focus, 
+#pop_up #form input[type="tel"]:focus, 
+#pop_up #form input[type="url"]:focus, 
+#pop_up #form input[type="password"]:focus,
+#pop_up #form input[name="message"]:focus 
+#pop_up #form textarea:focus, 
+#pop_up #form select:focus {
+        border: none;
+        outline: 0;
+        background: rgba(var(--main-black-rgb),0.1);
+        border-bottom:2px solid rgba(var(--main-black-rgb),0.5);
+        outline: none;
+        padding-left: 1rem;
+
+    }
+
+/* #pop_up #form .form_row:has(textarea),  */
+#pop_up #form .form_row:nth-of-type(4) {
+    margin-top: 2rem;
+}     
+
+#pop_up #form textarea {
+        width: 100%;
+        padding: 0.5rem;
+        font-size: 13px;
+        line-height: inherit;
+        letter-spacing: .2;
+        color: rgba(var(--main-black-rgb),1.0);
+        font-family: var(--font-family-Aktiv);
+        box-sizing: border-box;
+        border: 1px solid rgba(var(--main-black-rgb),0.8);
+        background: rgba(var(--main-black-rgb),0.0);
+        transition: all 0.2s ease-in-out;
+        border-radius: unset;
+    }
+
+#pop_up #form textarea:focus {
+        border: none;
+        outline: 0;
+        background: rgba(var(--main-black-rgb),0.1);
+        /* background: var(--vlight_grey); */
+        border-bottom:2px solid rgba(var(--main-black-rgb),0.5);
+        outline: none;
+        padding-left: 1rem;
+    }
+
+
+
+#pop_up #form input:focus {
+        background: rgba(var(--main-black-rgb),0.1);
+        border-bottom:2px solid var(--main-black-rgb);
+        outline: none;
+    }
+
+#pop_up #form input[type="textarea"]
+#pop_up #form input[name="message"] {}
+
+
+/*  =======================================
+    checkbox buttons 
+    ======================================= */
+
+
+.button-group-pills label input {
+    position: absolute;
+    display: none;
+    color: #fff !important;
+  }
+
+.button-group-pills .btn {
+    border-radius: 20px;
+    line-height: 1.2;
+    margin-bottom: 0;
+    margin-right: 5px;
+    border: 1px solid rgba(var(--main-black-rgb),1);
+    background-color: #fff;
+    color: rgba(var(--main-black-rgb),1);
+    font-size: 0.65rem;
+    line-height: 1;
+    padding: 0.4rem 0.875rem;
+    height: 28px;
+  }
+  .button-group-pills .btn.active {
+    border-color: rgba(var(--main-black-rgb),1);
+    background-color: rgba(var(--main-black-rgb),1);
+    color: #fff;
+    box-shadow: none;
+    font-family: var(--font-family-link);
+  }
+  .button-group-pills .btn:hover {
+    border-color: rgba(var(--main-black-rgb),1);
+    background-color: rgba(var(--main-black-rgb),0.8);
+    color: #fff;
+  }
