@@ -1,3 +1,31 @@
+ /* 
+ 
+ when CTA  button is clicked: 
+ .is-visible needs to be added to .pre-scrim
+ .popped needs to be added to #pop_up
+
+ */
+
+
+.pre-scrim.is-visible {
+    opacity: 1;
+    visibility: visible;
+    transition: opacity .8s ease,visibility 0s;
+}
+
+#pop_up {
+    /* display: none; */
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity .8s ease,visibility 0s;
+}
+
+#pop_up.popped {
+    /* display: flex; */
+    opacity: 1;
+    visibility: visible;
+    transition: opacity .8s ease,visibility 0s;
+}
 
 #pop_up {
     max-width: 740px;
@@ -15,9 +43,9 @@
     gap: 2rem;
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 48rem) {
     #pop_up {        
-    padding: 2rem;
+        padding: 2rem;
     }
 }
 
@@ -63,14 +91,14 @@
     max-width: 400px;
     height: 100%;
     object-fit: cover;
+    aspect-ratio: unset;
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 48rem) {
     #pop_up [class*="_img"] {
         max-width: unset;
-        max-height: 15vh;
+        max-height: 20vh;
         object-fit: cover;
-        aspect-ratio: unset;
     }
 }
 
