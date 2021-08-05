@@ -6,46 +6,99 @@
 
  */
 
+/*  ----------------------------
+    blurr the background when mobile menu is active 
+    requires js to add class 
+--------------------------------    */
 
-.pre-scrim.is-visible {
+
+
+.post-scrim {
+    background-color: hsla(0,0%,7%,.36);
+    -webkit-backdrop-filter: blur(4px);
+    backdrop-filter: blur(4px);
+}
+.post-scrim {
+    opacity: 0;
+    z-index: 111;
+    visibility: hidden;
+    display: block;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    transition: opacity .25s,visibility 0s linear .25s;
+}
+/*  */
+
+.post-scrim.is-visible {
     opacity: 1;
     visibility: visible;
     transition: opacity .8s ease,visibility 0s;
 }
 
+#close {
+    display: block;
+    position: fixed;
+    top: 2rem;
+    right: 2rem;
+    content:'X';
+    width:20px;
+    height: 20px;
+    background-image: url('data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2220.574%22%20height%3D%2220.375%22%20viewBox%3D%220%200%2020.574%2020.375%22%3E %20%20%3Cpath%20d%3D%22M24511.518%2C4449.6l-7.73-7.646-7.73%2C7.646a1.5%2C1.5%2C0%2C0%2C1-1.057.431%2C1.5%2C1.5%2C0%2C0%2C1-1.053-2.566l7.707-7.621-7.707-7.624a1.5%2C1.5%2C0%2C1%2C1%2C2.109-2.129l7.73%2C7.644%2C7.73-7.644a1.5%2C1.5%2C0%2C1%2C1%2C2.111%2C2.129l-7.709%2C7.624%2C7.709%2C7.621a1.5%2C1.5%2C0%2C0%2C1-2.111%2C2.135Z%22%20transform%3D%22translate%28-24493.5%20-4429.66%29%22%20fill%3D%22%23fff%22%2F%3E %3C%2Fsvg%3E');
+    background-size: cover;
+    background-position: center center;
+    z-index:333;
+    cursor: pointer;
+    transition: all .25s ease;
+    transform: rotate(0deg);
+
+
+}
+#close:hover {
+    transform: rotate(20deg);
+}
+#close:active {
+    transform: rotate(40deg);
+}
+
 #pop_up {
-    /* display: none; */
+    display: none;
     opacity: 0;
     visibility: hidden;
     transition: opacity .8s ease,visibility 0s;
 }
 
 #pop_up.popped {
-    /* display: flex; */
+    display: flex;
     opacity: 1;
     visibility: visible;
     transition: opacity .8s ease,visibility 0s;
 }
 
 #pop_up {
-    max-width: 740px;
+    max-width: 770px;
     width:100%;
     background-color: white;
     position: absolute;
-    left: 50%;    
+    left: calc(50% - 2rem);    
     top: 50%;
     transform: translate(-50%,-50%);
     z-index: 222;
-    padding: 2rem;
+    padding: 1rem;
+    margin: 2rem;
     /*  */
-    display: flex;
     flex-direction: row-reverse;
-    gap: 2rem;
+    /* gap: 2rem; */
 }
 
+
 @media screen and (max-width: 48rem) {
-    #pop_up {        
-        padding: 2rem;
+    #pop_up {  
+        left:50%;      
+        padding: 2rem; 
+        margin:0;
     }
 }
 
@@ -58,12 +111,18 @@
         gap: 1rem;
     }
 }
-.form_wrap {
+#pop_up .form_wrap {
     width: 50%;
 }
+
+#pop_up .form_wrap:nth-of-type(2) {
+    padding: 2rem 2rem 2rem 1rem ;
+}
+
 @media screen and (max-width: 48em) {
-    .form_wrap {
+    #pop_up .form_wrap {
         width: 100%;
+        padding: 0;
     }
 }
 
@@ -77,6 +136,11 @@
         width:100%;
     }
 }
+
+#pop_up #form .form_row:last-of-type {
+    margin-bottom: 0;
+}
+
 .form_img_wrap {
     height: 100%;
 }
@@ -161,7 +225,7 @@
     #pop_up #form.form {
         box-sizing: border-box;
         width: 100%;
-        max-width: 320px;
+        /* max-width: 320px; */
     }
 
     #pop_up #form .form_row {
@@ -263,7 +327,7 @@
     position: absolute;
     display: none;
     color: #fff !important;
-  }
+}
 
 .button-group-pills .btn {
     border-radius: 20px;
@@ -277,16 +341,40 @@
     line-height: 1;
     padding: 0.4rem 0.875rem;
     height: 28px;
-  }
-  .button-group-pills .btn.active {
+}
+.button-group-pills .btn.active {
     border-color: rgba(var(--main-black-rgb),1);
     background-color: rgba(var(--main-black-rgb),1);
     color: #fff;
     box-shadow: none;
     font-family: var(--font-family-link);
-  }
-  .button-group-pills .btn:hover {
+}
+
+.button-group-pills .btn:hover {
     border-color: rgba(var(--main-black-rgb),1);
     background-color: rgba(var(--main-black-rgb),0.8);
     color: #fff;
-  }
+}
+
+.checkbox_wrap { 
+    height: 1px;
+    margin-bottom: 2rem;
+    margin-top: 1.5rem;
+}
+
+.checkbox_wrap input[type="checkbox"] {
+    position: absolute;
+}
+
+label.plain-checkbox { 
+    color: rgba(var(--main-black-rgb),1);
+    font-size: 0.65rem;
+    text-align: left;
+    padding:0;
+}
+
+.checkbox_wrap label div {
+    position: absolute;
+    left: 20px;
+    clear: both;
+}
