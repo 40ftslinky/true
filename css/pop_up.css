@@ -84,7 +84,8 @@
     position: absolute;
     left: calc(50% - 2rem);    
     top: 50%;
-    transform: translate(-50%,-50%);
+    /* transform: translate(-50%,-50%); */
+    transform: translate(-50%,0);
     z-index: 222;
     padding: 1rem;
     margin: 2rem;
