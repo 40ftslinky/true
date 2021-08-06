@@ -24,7 +24,6 @@ jQuery(document).ready(function( $ ) {
             $("#nav").addClass("is-active");
             $(".pre-scrim").addClass("is-active");
             $("body").addClass("no_scroll");
-                  
         } else {
             $("#nav").removeClass("is-active");
             $(".pre-scrim").removeClass("is-active");
@@ -68,6 +67,19 @@ jQuery(document).ready(function( $ ) {
         $(".menu-link").removeClass("is-active");
         $(".menu-icons").remove("is-active");
     });
+
+    
+    $(".btn-default input").click(function(){
+        $(this).parent().toggleClass("is-checked");
+        // $(this).checked = true;
+	});
+    // $(".btn-default input:checked").parent().addClass("is-checked");
+    // $(".btn-default input:checked").change(function() {
+    //     $(this).parent().parent().removeClass("is-checked");
+    //     $(this).parent().parent().addClass("is-checked");
+    //     // console.log($(".btn-default input:checked").val());
+    // });
+
     
 });
 
