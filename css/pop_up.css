@@ -330,7 +330,7 @@
     color: #fff !important;
 }
 
-.button-group-pills .btn {
+.button-group-pills .btn-default {
     border-radius: 20px;
     line-height: 1.2;
     margin-bottom: 0;
@@ -343,7 +343,9 @@
     padding: 0.4rem 0.875rem;
     height: 28px;
 }
-.button-group-pills .btn.active {
+
+/* input[type="checkbox"]:checked + .button-group-pills .btn-default, */
+.button-group-pills .btn-default.is-checked {
     border-color: rgba(var(--main-black-rgb),1);
     background-color: rgba(var(--main-black-rgb),1);
     color: #fff;
@@ -351,7 +353,7 @@
     font-family: var(--font-family-link);
 }
 
-.button-group-pills .btn:hover {
+.button-group-pills .btn-default:hover {
     border-color: rgba(var(--main-black-rgb),1);
     background-color: rgba(var(--main-black-rgb),0.8);
     color: #fff;

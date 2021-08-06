@@ -94,7 +94,7 @@ font-size: min(max(MOB*0.4px, DESK/1920vw), DESKpx);
 /* ---------------------------------------------- */
 .h1, h1 {
     font-size: 90px;
-    font-size: 5vw; 
+    /* font-size: 5vw;  */
     font-size: min(max(40px, 4.68vw), 90px);
     /* font-size: min(max(40px, 5.357vw), 90px); */
     line-height: 1.1;
@@ -113,6 +113,19 @@ h1.hero_dms_title {
 #intro_dms h1 {
     text-align: center;
 }
+
+h1.small_h1 {
+    font-size: 63px;
+    font-size: min(max(36px, 3.28vw), 63px);
+}
+
+h2.large_h2 {
+    font-size: 90px;
+    font-size: min(max(40px, 4.68vw), 90px);
+}
+
+
+
 
 /* ---------------------------------------------- */
 
