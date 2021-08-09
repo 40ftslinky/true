@@ -1,0 +1,367 @@
+/* parallax */
+
+.first_test_section {
+    height: 80vh;
+    background: whitesmoke;
+}
+
+.third_test_section {
+    height: 80vh;
+    background: whitesmoke;
+}
+
+/* ======================================= */
+
+
+/*  =======================================
+    #fwbo_sect fwbo_sect
+    =================================== */
+
+    /*  */
+
+    section#fwbo_sect, 
+    section#fwbo_sect article  {
+        margin: auto;
+        max-width: unset;
+        width: 100vw;
+    }
+    section#fwbo_sect {
+        margin-bottom: 5rem;
+    }
+
+    .fwbo_wrap_parallax {
+        position: relative;
+        width: 100vw;
+        height: 100vh;
+        /* display: flex;
+        justify-content: center;
+        align-items: center; */
+    }
+    @media screen and (max-width: 48em) {
+        .fwbo_wrap {
+            /* align-items: flex-start; */
+        }
+    }
+
+    #fwbo_sect img.fwbo_img {
+        /* width: 100%; */
+        object-fit: cover;
+    }
+    .one_col_feature img.fwbo_img {
+        /* height: 63vh; */
+        object-fit: cover;
+        object-position: bottom right;
+    }
+
+
+    #fwbo_sect .fwbo_text_wrap {
+        /* width: 50%;
+        margin-left: 50%; */
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        z-index: 22;
+        /*  */
+        align-items: center;
+    }
+
+    @media screen and (max-width: 48em) {
+        #fwbo_sect .fwbo_text_wrap {
+            max-width: unset; 
+            width: 100%;
+            padding-left: 25%;
+            padding-right: 25%;
+        }
+    }
+    
+    
+    @media screen and (max-width: 38em) {
+        #fwbo_sect .fwbo_text_wrap {
+            padding-left: 15%;
+            padding-right: 15%;
+        }
+    }
+
+
+    #fwbo_sect .fwbo_text_wrap h2 {
+        max-width: 22%;
+        text-align: center;
+        /* color: white; */
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+    @media screen and (max-width: 48em) {
+        #fwbo_sect .fwbo_text_wrap h2 {
+            max-width: unset;
+        }
+    }
+
+
+    .parallax_img_wrap {
+        position: absolute; 
+        /* transform: translate(-50%,-50%);   */
+        min-width: unset;
+   
+    }
+
+    .parallax_img_wrap img {
+        width: 100%;
+    }
+
+
+    /* ============================================== */
+
+    /* BING */
+    .parallax_img_wrap:nth-of-type(1) {
+        width: 6.25%;
+        left: 23%;
+        top:6%;
+        z-index: 11;
+    }
+    @media screen and (max-width: 48em) {
+        .parallax_img_wrap:nth-of-type(1) {
+            display: none;
+        }
+    }
+
+    /* SNAPCHAT */
+    .parallax_img_wrap:nth-of-type(2) {
+        width: 6.25%;
+        left: 88%;
+        top:5%;
+        z-index: 22;
+    }
+    @media screen and (max-width: 48em) {
+        .parallax_img_wrap:nth-of-type(2) {
+            width: 11.1%;
+            left: 70.6%;
+            top: 0%;
+        }
+    }
+    
+
+    /* AMAZON */
+    .parallax_img_wrap:nth-of-type(3) {
+        width: 10.4%;
+        left: 7.1%;
+        top: 17.3%;
+        z-index: 33;
+    }
+    @media screen and (max-width: 48em) {
+        .parallax_img_wrap:nth-of-type(3) {
+            width: 18.5%;
+            left: 5.37%;
+            /* top: 6.875%; */
+            top: 9.6%;
+        }
+    }
+
+    /* Google  */
+    .parallax_img_wrap:nth-of-type(4) {
+        width: 8.3%;
+        left: 33%;
+        top: 25%;
+        z-index: 44;
+    }
+    @media screen and (max-width: 48em) {
+        .parallax_img_wrap:nth-of-type(4) {
+            width: 14.8%;
+            left: 33%;
+            /* top: 2.2%; */
+            top: 3.1%;
+        }
+    }
+
+    /* TEN */
+    .parallax_img_wrap:nth-of-type(5) {
+        width: 10.4%;
+        left: 55%;
+        top: 16.4%;
+        z-index: 55;
+    }
+    @media screen and (max-width: 48em) {
+        .parallax_img_wrap:nth-of-type(5) {
+            width: 18.5%;
+            left: 76.2%;
+            /* top: 12%; */
+            top: 17%;
+        }
+    }
+
+    /* YOUTUBE */
+    .parallax_img_wrap:nth-of-type(6) {
+        width: 10.4%;
+        left: 78%;
+        top: 23%;
+        z-index: 66;
+    }
+    @media screen and (max-width: 48em) {
+        .parallax_img_wrap:nth-of-type(6) {
+            width: 14.8%;
+            left: 83.7%;
+            /* top: 43.9%; */
+            top: 61.5%;
+        }
+    }
+    
+    /* Foxtel_Go */
+    .parallax_img_wrap:nth-of-type(7) {
+        width: 6.25%;
+        left: 9.2%;
+        top: 50.2%;
+        z-index: 77;
+    }
+    @media screen and (max-width: 48em) {
+        .parallax_img_wrap:nth-of-type(7) {
+            width: 11.1%;
+            left: 30.2%;
+            /* top: 15.9%; */
+            top: 22.3%;
+        }
+    }
+    
+    /* Spotify */
+    .parallax_img_wrap:nth-of-type(8) {
+        width: 10.4%;
+        left: 20.8%;
+        top: 51.2%;
+        z-index: 88;
+    }
+    @media screen and (max-width: 48em) {
+        .parallax_img_wrap:nth-of-type(8) {
+            width: 18.5%;
+            left: 5.4%;
+            /* top: 48.1%; */
+            top: 67.4%;
+        }
+    }
+    
+    /* TikTok */
+    .parallax_img_wrap:nth-of-type(9) {
+        width: 6.25%;
+        left: 70.5%;
+        top: 45%;
+        z-index: 99;
+    }
+    @media screen and (max-width: 48em) {
+        .parallax_img_wrap:nth-of-type(9) {
+            width: 11.1%;
+            left: 83.7%;
+            /* top: 27.6%; */
+            top: 38.7%;
+        }
+    }
+
+    /* Fairfax */
+    .parallax_img_wrap:nth-of-type(10) {
+        width: 6.25%;
+        left: 85.5%;
+        top: 55.5%;
+        z-index: 100;
+    }
+    @media screen and (max-width: 48em) {
+        .parallax_img_wrap:nth-of-type(10) {
+            width: 11.2%;
+            left: 57.5%;
+            /* top: 65%; */
+            top: 91.1%;
+        }
+    }
+
+    /* Nine */
+    .parallax_img_wrap:nth-of-type(11) {
+        width: 8.33%;
+        left: 7.8%;
+        top: 77.4%;
+        z-index: 111;
+    }
+    @media screen and (max-width: 48em) {
+        .parallax_img_wrap:nth-of-type(11) {
+            width: 14.8%;
+            left: 33.3%;
+            /* top: 58.5%; */
+            top: 82.0%; 
+        }
+    }
+
+     /* Pinterest */
+     .parallax_img_wrap:nth-of-type(12) {
+        width: 6.25%;
+        left: 23.1%;
+        top: 89.3%;
+        z-index: 122;
+    }
+    @media screen and (max-width: 48em) {
+        .parallax_img_wrap:nth-of-type(12) {
+            width: 11.2%;
+            left: 14.4%;
+            /* top: 63.8%; */
+            top: 89.4%; 
+        }
+    }
+
+    /* Twitter */
+    .parallax_img_wrap:nth-of-type(13) {
+        width: 8.33%;
+        left: 36.5%;
+        top: 76.1%;
+        z-index: 133;
+    }
+    @media screen and (max-width: 48em) {
+        .parallax_img_wrap:nth-of-type(13) {
+            width: 14.8%;
+            left: 51.85%;
+            /* top: 49.1%; */
+            top: 68.9%; 
+        }
+    }
+
+    /* NewsCorp */
+    .parallax_img_wrap:nth-of-type(14) {
+        width: 6.25%;
+        left: 55.6%;
+        top: 89.3%;
+        z-index: 144;
+        margin-top: -5%;
+    }
+    @media screen and (max-width: 48em) {
+        .parallax_img_wrap:nth-of-type(14) {
+            width: 11.1%;
+            left: 53.7%;
+            /* top: 12%; */
+            top: 16.3%;
+        }
+    }
+
+    /* Gumtree */
+    .parallax_img_wrap:nth-of-type(15) {
+        width: 10.4%;
+        left: 68.7%;
+        top: 73.33%;
+        z-index: 155;
+    }
+    @media screen and (max-width: 48em) {
+        .parallax_img_wrap:nth-of-type(15) {
+            width: 18.5%;
+            left: 76.2%;
+            /* top: 58.5%; */
+            top: 82.0%;
+        }
+    }
+    
+    /* Yahoo */
+    .parallax_img_wrap:nth-of-type(16) {
+        width: 6.25%;
+        left: 84.1%;
+        top: 84.6%;
+        z-index: 166;
+    }
+    @media screen and (max-width: 48em) {
+        .parallax_img_wrap:nth-of-type(16) {
+            width: 11.1%;
+            left: 5.4%;
+            top: 24.4%;
+        }
+    }
+
+/* ============================================== */

@@ -1,0 +1,345 @@
+/* parallax */
+
+.first_test_section {
+    height: 80vh;
+    background: whitesmoke;
+}
+
+.third_test_section {
+    height: 80vh;
+    background: whitesmoke;
+}
+
+/* ======================================= */
+
+
+/*  =======================================
+    #fwbo_sect fwbo_sect
+    =================================== */
+
+    /*  */
+
+    section#fwbo_sect, 
+    section#fwbo_sect article  {
+        margin: auto;
+        max-width: unset;
+        width: 100vw;
+    }
+    section#fwbo_sect {
+        margin-bottom: 5rem;
+    }
+
+    .fwbo_wrap_parallax {
+        position: relative;
+        width: 100vw;
+        height: 100vh;
+        /* display: flex;
+        justify-content: center;
+        align-items: center; */
+    }
+    @media screen and (max-width: 48em) {
+        .fwbo_wrap {
+            /* align-items: flex-start; */
+        }
+    }
+
+    #fwbo_sect img.fwbo_img {
+        /* width: 100%; */
+        object-fit: cover;
+    }
+    .one_col_feature img.fwbo_img {
+        /* height: 63vh; */
+        object-fit: cover;
+        object-position: bottom right;
+    }
+
+
+    #fwbo_sect .fwbo_text_wrap {
+        /* width: 50%;
+        margin-left: 50%; */
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        z-index: 22;
+        /*  */
+        align-items: center;
+    }
+
+    @media screen and (max-width: 48em) {
+        #fwbo_sect .fwbo_text_wrap {
+            max-width: unset; 
+            width: 100%;
+            padding-left: 25%;
+            padding-right: 25%;
+        }
+    }
+    
+    
+    @media screen and (max-width: 38em) {
+        #fwbo_sect .fwbo_text_wrap {
+            padding-left: 15%;
+            padding-right: 15%;
+        }
+    }
+
+
+    #fwbo_sect .fwbo_text_wrap h2 {
+        max-width: 22%;
+        text-align: center;
+        /* color: white; */
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+    @media screen and (max-width: 48em) {
+        #fwbo_sect .fwbo_text_wrap h2 {
+            max-width: unset;
+        }
+    }
+
+
+
+    #sem .fwbo_text_wrap {
+        /* width: 50%;
+        margin-left: 50%; */
+        position: absolute;
+        z-index: 22;
+        /*  */
+        align-items: center;
+    }
+    
+    @media screen and (max-width: 48em) {
+        #sem .fwbo_text_wrap {
+            padding-top: 5%;
+            padding-bottom: 5%;
+            height: 100%;
+            width: 80%;
+            margin-left: unset;
+            align-items: center;
+        }
+    }
+
+
+    #sem .fwbo_text_wrap h2 {
+        max-width: 20%;
+        text-align: center;
+        /* color: white; */
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+    @media screen and (max-width: 48em) {
+        #sem .fwbo_text_wrap h2 {
+            max-width: unset;
+        }
+    }
+
+
+    .parallax_img_wrap {
+        position: absolute; 
+        /* transform: translate(-50%,-50%);   */
+        min-width: unset;
+   
+    }
+
+    .parallax_img_wrap img {
+        width: 100%;
+    }
+
+
+
+
+    /* ============================================== */
+
+    /* YouTube */
+    .parallax_img_wrap:nth-of-type(1) {
+        width: 9.375%;
+        left: 13%;
+        top: 9%;
+        z-index: 11;
+    }
+    @media screen and (max-width: 48em) {
+        .parallax_img_wrap:nth-of-type(1) {
+            width: 16.2%;
+            left: 5.37%;
+            top: 11.4%;
+        }
+    }
+
+    /* AskFM */
+    .parallax_img_wrap:nth-of-type(2) {
+        width: 6.56%;
+        left: 34.2%;
+        top: 17.6%;
+        z-index: 22;
+    }
+    @media screen and (max-width: 48em) {
+        .parallax_img_wrap:nth-of-type(2) {
+            width: 11.66%;
+            left: 31%;
+            top: 4.82%;
+        }
+    }
+    
+
+    /* Spotify */
+    .parallax_img_wrap:nth-of-type(3) {
+        width: 9.3%;
+        left: 52.97%;
+        top: 9.35%;
+        z-index: 33;
+    }
+    @media screen and (max-width: 48em) {
+        .parallax_img_wrap:nth-of-type(3) {
+            width: 16.2%;
+            left: 53.9%;
+            /* top: 6.875%; */
+            top: 8.54%;
+        }
+    }
+
+    /* Android  */
+    .parallax_img_wrap:nth-of-type(4) {
+        width: 9.375%;
+        left: 76%;
+        top: 12.5%;
+        z-index: 44;
+    }
+    @media screen and (max-width: 48em) {
+        .parallax_img_wrap:nth-of-type(4) {
+            width: 6.94%;
+            left: 78.7%;
+            /* top: 2.2%; */
+            top: 12.63%;
+        }
+    }
+
+    /* Baidu */
+    .parallax_img_wrap:nth-of-type(5) {
+        width: 6.5%;
+        left: 9.3%;
+        top: 30.55%;
+        z-index: 55;
+    }
+    @media screen and (max-width: 48em) {
+        .parallax_img_wrap:nth-of-type(5) {
+            width: 11.57%;
+            left: 0%;
+            /* top: 12%; */
+            top: 38.5%;
+        }
+    }
+
+    /* Google */
+    .parallax_img_wrap:nth-of-type(6) {
+        width: 9.375%;
+        left: 20.2%;
+        top: 42.7%;
+        z-index: 66;
+    }
+    @media screen and (max-width: 48em) {
+        .parallax_img_wrap:nth-of-type(6) {
+            width: 16.2%;
+            left: 28.8%;
+            /* top: 43.9%; */
+            top: 19%;
+        }
+    }
+    
+    /* iTunes */
+    .parallax_img_wrap:nth-of-type(7) {
+        width: 6.25%;
+        left: 70.3%;
+        top: 41.67%;
+        z-index: 77;
+    }
+    @media screen and (max-width: 48em) {
+        .parallax_img_wrap:nth-of-type(7) {
+            width: 16.2%;
+            left: 83%;
+            /* top: 15.9%; */
+            top: 29.4%;
+        }
+    }
+    
+    /* Yahoo */
+    .parallax_img_wrap:nth-of-type(8) {
+        width: 9.375%;
+        left: 13%;
+        top: 68%;
+        z-index: 88;
+    }
+    @media screen and (max-width: 48em) {
+        .parallax_img_wrap:nth-of-type(8) {
+            width: 16.2%;
+            left: 5.4%;
+            /* top: 48.1%; */
+            top: 65.8%;
+        }
+    }
+    
+    /* AppStore */
+    .parallax_img_wrap:nth-of-type(9) {
+        width: 6.77%;
+        left: 37.1%;
+        top: 72.5%;
+        z-index: 99;
+    }
+    @media screen and (max-width: 48em) {
+        .parallax_img_wrap:nth-of-type(9) {
+            width: 12.3%;
+            left: 30.65%;
+            /* top: 27.6%; */
+            top: 85.8%;
+        }
+    }
+
+    /* Flickr */
+    .parallax_img_wrap:nth-of-type(10) {
+        width: 6.25%;
+        left: 55.6%;
+        top: 80%;
+        z-index: 100;
+    }
+    @media screen and (max-width: 48em) {
+        .parallax_img_wrap:nth-of-type(10) {
+            width: 11.2%;
+            left: 57.5%;
+            /* top: 65%; */
+            top: 80%;
+        }
+    }
+
+    /* Bing */
+    .parallax_img_wrap:nth-of-type(11) {
+        width: 9.375%;
+        left: 68.54%;
+        top: 71.76%;
+        z-index: 111;
+    }
+    @media screen and (max-width: 48em) {
+        .parallax_img_wrap:nth-of-type(11) {
+            width: 16.2%;
+            left: 73.3%;
+            /* top: 58.5%; */
+            top: 77.8%; 
+        }
+    }
+
+     /* Answers */
+     .parallax_img_wrap:nth-of-type(12) {
+        width: 6.5%;
+        left: 84.4%;
+        top: 58%;
+        z-index: 122;
+    }
+    @media screen and (max-width: 48em) {
+        .parallax_img_wrap:nth-of-type(12) {
+            width: 16.2%;
+            left: 83%;
+            /* top: 15.9%; */
+            top: 61.2%; 
+        }
+    }
+
+   
+
+/* ============================================== */
