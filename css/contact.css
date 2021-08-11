@@ -180,7 +180,7 @@
 
 
 /*  =======================================
-    POP UP FORM
+    CONTACT FORM
     =================================== */
 
     .contact_form ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
@@ -467,7 +467,7 @@ label.plain-checkbox {
     transform: translateY(2px);
 }
 
-.contact_form .no-list.hs-error-msgs.nputs-list li {
+.contact_form .no-list.hs-error-msgs.inputs-list li {
     
 }
 .contact_form .hs-error-msg {}

@@ -78,7 +78,7 @@
 }
 
 #pop_up {
-    max-width: 1080px;
+    max-width: 770px;
     width:100%;
     background-color: white;
     position: absolute;
@@ -127,59 +127,18 @@
     }
 }
 
-
-
-
-#pop_up {
-    width:100%;
-    background-color: white;
-    display: block;
-    padding: 1rem;
-    margin: 0 2rem;
-}
-
-
-@media screen and (max-width: 48rem) {
-    #pop_up {  
-        left:50%;      
-        padding: 2rem; 
-        margin:0;
-    }
-}
-
-@media screen and (max-width: 48em) {
-    #pop_up {
-        flex-direction: column;
-        max-width: 90vw;
-        width: 420px;
-        padding: 1rem;
-        gap: 1rem;
-    }
-}
-#pop_up .form_wrap {
-    width: 100%;
-}
-
-
-@media screen and (max-width: 48em) {
-    #pop_up .form_wrap {
-        width: 100%;
-        padding: 0;
-    }
-}
-
-#pop_up .hs-form{
+#pop_up #form{
     max-width: 420px;
     /* width:100%; */
 }
 @media screen and (max-width: 48em) {
-    #pop_up .hs-form {
+    #pop_up #form.form {
         max-width: unset !important;
         width:100%;
     }
 }
 
-#pop_up .hs-form .hs-form-field:last-of-type {
+#pop_up #form .form_row:last-of-type {
     margin-bottom: 0;
 }
 
@@ -194,7 +153,7 @@
 
 
 #pop_up [class*="_img"] {
-    max-width: 510px;
+    max-width: 400px;
     height: 100%;
     object-fit: cover;
     aspect-ratio: unset;
@@ -210,7 +169,7 @@
 
 
 /*  =======================================
-    CONTACT FORM
+    POP UP FORM
     =================================== */
 
     #pop_up ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
@@ -248,7 +207,7 @@
 
 
     @media screen and (max-width: 48em) {
-        #pop_up .hs-form.form {
+        #pop_up #form.form {
             display: block;
         }
     }
@@ -264,22 +223,22 @@
         margin-bottom: 1rem;
     }
     
-    #pop_up .hs-form.form {
+    #pop_up #form.form {
         box-sizing: border-box;
         width: 100%;
         /* max-width: 320px; */
     }
 
-    #pop_up .hs-form .hs-form-field {
+    #pop_up #form .form_row {
         position: relative;
         margin-bottom: 1rem;
     }
     
-    /* .hs-input */
- #pop_up .hs-form input[type="text"],
- #pop_up .hs-form input[type="email"],
- #pop_up .hs-form input[type="tel"], 
- #pop_up .hs-form input[name="message"] {
+
+ #pop_up #form input[type="text"],
+ #pop_up #form input[type="email"],
+ #pop_up #form input[type="number"], 
+ #pop_up #form input[name="message"] {
         width: 100%;
         padding: 0.5rem;
         /* padding: 0.5rem 1rem 0.5rem 0; */
@@ -297,25 +256,18 @@
         transition: all 0.2s ease-in-out;
         border-radius: unset;
     }
-#pop_up .hs-form label {
-    font-size: 13px;
-    line-height: inherit;
-    letter-spacing: .2;
-    color: rgba(var(--main-black),1.0);
-    font-family: var(--font-family-Aktiv);
-}    
 
 
-#pop_up .hs-form input[type="email"]:focus, 
-#pop_up .hs-form input[type="number"]:focus, 
-#pop_up .hs-form input[type="search"]:focus, 
-#pop_up .hs-form input[type="text"]:focus, 
-#pop_up .hs-form input[type="tel"]:focus, 
-#pop_up .hs-form input[type="url"]:focus, 
-#pop_up .hs-form input[type="password"]:focus,
-#pop_up .hs-form input[name="message"]:focus 
-#pop_up .hs-form textarea:focus, 
-#pop_up .hs-form select:focus {
+#pop_up #form input[type="email"]:focus, 
+#pop_up #form input[type="number"]:focus, 
+#pop_up #form input[type="search"]:focus, 
+#pop_up #form input[type="text"]:focus, 
+#pop_up #form input[type="tel"]:focus, 
+#pop_up #form input[type="url"]:focus, 
+#pop_up #form input[type="password"]:focus,
+#pop_up #form input[name="message"]:focus 
+#pop_up #form textarea:focus, 
+#pop_up #form select:focus {
         border: none;
         outline: 0;
         background: rgba(var(--main-black-rgb),0.1);
@@ -325,12 +277,12 @@
 
     }
 
-/* #pop_up .hs-form .hs-form-field:has(textarea),  */
-#pop_up .hs-form .hs-form-field:nth-of-type(4) {
+/* #pop_up #form .form_row:has(textarea),  */
+#pop_up #form .form_row:nth-of-type(4) {
     margin-top: 2rem;
 }     
 
-#pop_up .hs-form textarea {
+#pop_up #form textarea {
         width: 100%;
         padding: 0.5rem;
         font-size: 13px;
@@ -345,11 +297,7 @@
         border-radius: unset;
     }
 
-    #pop_up .hs-form .hs_message textarea {
-        min-height: 75px;
-    }    
-
-#pop_up .hs-form textarea:focus {
+#pop_up #form textarea:focus {
         border: none;
         outline: 0;
         background: rgba(var(--main-black-rgb),0.1);
@@ -359,23 +307,16 @@
         padding-left: 1rem;
     }
 
-#pop_up .input li {
-    list-style: none;
-    display: inline-block;
-}
-#pop_up .input ul.inputs-list {
-    padding-left: 0;
-}
 
 
-#pop_up .hs-form input:focus {
+#pop_up #form input:focus {
         background: rgba(var(--main-black-rgb),0.1);
         border-bottom:2px solid var(--main-black-rgb);
         outline: none;
     }
 
-#pop_up .hs-form input[type="textarea"]
-#pop_up .hs-form input[name="message"] {}
+#pop_up #form input[type="textarea"]
+#pop_up #form input[name="message"] {}
 
 
 /*  =======================================
@@ -383,14 +324,13 @@
     ======================================= */
 
 
-/* .button-group-pills label input, */
-#pop_up label.hs-form-checkbox-display input {
+.button-group-pills label input {
     position: absolute;
     display: none;
     color: #fff !important;
 }
 
-#pop_up label.hs-form-checkbox-display {
+.button-group-pills .btn-default {
     border-radius: 20px;
     line-height: 1.2;
     margin-bottom: 0;
@@ -404,7 +344,8 @@
     height: 28px;
 }
 
-#pop_up label.hs-form-checkbox-display.is-checked {
+/* input[type="checkbox"]:checked + .button-group-pills .btn-default, */
+.button-group-pills .btn-default.is-checked {
     border-color: rgba(var(--main-black-rgb),1);
     background-color: rgba(var(--main-black-rgb),1);
     color: #fff;
@@ -412,13 +353,13 @@
     font-family: var(--font-family-link);
 }
 
-#pop_up label.hs-form-checkbox-display:hover {
+.button-group-pills .btn-default:hover {
     border-color: rgba(var(--main-black-rgb),1);
     background-color: rgba(var(--main-black-rgb),0.8);
     color: #fff;
 }
 
-#pop_up.checkbox_wrap { 
+.checkbox_wrap { 
     height: 1px;
     margin-bottom: 2rem;
     margin-top: 1.5rem;
@@ -439,74 +380,4 @@ label.plain-checkbox {
     position: absolute;
     left: 20px;
     clear: both;
-}
-
-#pop_up .hs-button {
-    position: relative;
-    z-index: 1;
-    margin-left: 0;
-    margin-right: 6px;
-    margin-top: 6px;
-    max-width: 100%;
-    white-space: nowrap;
-    text-overflow: ellipsis;
-    overflow: hidden;
-    padding: 8px 28px;
-    border-radius: 20px;
-    background: #fff;
-    /* color: #111; */
-    border: none;
-    font-family: var(--font-link);
-    font-weight: 500;
-    font-size: 16px;
-    /* line-height: 1.5; */
-    line-height: 1.8;
-    height: 40px;
-    display: inline-block;
-    vertical-align: top;
-    text-align: center;
-    text-decoration: none;
-    background: 0 0;
-    cursor: pointer;
-    -webkit-transition: all .25s ease-out;
-    -o-transition: all .25s ease-out;
-    transition: all .25s ease-out;
-/*  */
-    background: var(--main-black);
-    color: #fff;
-}
-#pop_up .hs-button:hover {
-    background: var(--black-hover);
-    color: #fff;
-}
-
-#pop_up .no-list.hs-error-msgs.inputs-list {
-    padding: 0;
-    list-style: none;
-    margin: 0;
-}
-
-#pop_up .hs_interests [id*="label-interests"] span {
-    font-size: 20px;
-    font-size: min(max(16px, 1.04vw), 20px);
-    font-family: var(--font-link);
-}
-
-#pop_up input[type="checkbox"][id*="terms_and_conditions"] {
-    margin-right: 8px;
-    transform: translateY(2px);
-}
-
-#pop_up .no-list.hs-error-msgs.inputs-list li {
-    
-}
-#pop_up .hs-error-msg {
-    background-color: var(--main-black);
-    color: #fff !important;
-    padding: 0.25rem;
-}
-
-/* if we cant get JS to work ? */
-input[type="checkbox"]:checked + span {
-    /* background-color: red; */
 }

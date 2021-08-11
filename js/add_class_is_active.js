@@ -68,18 +68,24 @@ jQuery(document).ready(function( $ ) {
         $(".menu-icons").remove("is-active");
     });
 
-    // hubspot pill buttons
-    $(".contact_form label.hs-form-checkbox-display").click(function(){
+    
+    $(".btn-default input").click(function(){
         $(this).parent().toggleClass("is-checked");
-        // $(this).checked = true;
 	});
-    // $(".btn-default input:checked").parent().addClass("is-checked");
-    // $(".btn-default input:checked").change(function() {
-    //     $(this).parent().parent().removeClass("is-checked");
-    //     $(this).parent().parent().addClass("is-checked");
-    //     // console.log($(".btn-default input:checked").val());
-    // });
+    
+    // hubspot pill buttons
 
+    $(".hs-form-checkbox-display input.hs-input").click(function(){
+        $(this).parent().toggleClass("is-checked");
+        $(this).checked = true;
+	});
+    // not working for hubspot checkbox pseudo-buttons ?
+    $("#pop_up label.hs-form-checkbox-display input.hs-input").click(function(){
+        $(this).parent().toggleClass("is-checked");
+	});
+    $("input[type='checkbox']").click(function(){
+        $(this).parent().toggleClass("is-checked");
+	});
     
 });
 

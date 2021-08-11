@@ -8,17 +8,20 @@
 		var pop_up_height = jQuery("#pop_up").outerHeight();
 		var new_top = from_top   + ((win_height - pop_up_height)/2);
 	jQuery("#pop_up").css({ top: new_top+'px' });
+	jQuery("body").addClass("no_scroll");
 }
 
 	jQuery(document).ready(function($){
-		  jQuery(".post-scrim").click(function(){
-			  jQuery("#pop_up").removeClass("popped");
-			  jQuery(".post-scrim").removeClass("is-visible");
-			});
-			jQuery("#close").click(function(){
-				jQuery("#pop_up").removeClass("popped");
-				jQuery(".post-scrim").removeClass("is-visible");
-		  });
+		jQuery(".post-scrim").click(function(){
+			jQuery("#pop_up").removeClass("popped");
+			jQuery(".post-scrim").removeClass("is-visible");
+			jQuery("body").removeClass("no_scroll");
+		});
+		jQuery("#close").click(function(){
+			jQuery("#pop_up").removeClass("popped");
+			jQuery(".post-scrim").removeClass("is-visible");
+			jQuery("body").removeClass("no_scroll");
+		});		
 	});
 
 jQuery(document).ready(function($){
