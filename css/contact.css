@@ -64,7 +64,7 @@
 #intro_contact .col_feature:nth-of-type(1) {
     width: 30%;
     /* max-width: 30%; */
-    min-width: 350px;
+    min-width: 360px;
 
 }
 #intro_contact .col_feature:nth-of-type(2) {
@@ -139,7 +139,7 @@
 }
 
 .contact_form .hs-form{
-    max-width: 350px;
+    max-width: 360px;
     /* width:100%; */
 }
 @media screen and (max-width: 48em) {
@@ -353,14 +353,14 @@
     ======================================= */
 
 
-.button-group-pills label input,
-label.hs-form-checkbox-display input {
+/* .button-group-pills label input, */
+.contact_form label.hs-form-checkbox-display input {
     position: absolute;
     display: none;
     color: #fff !important;
 }
 
-label.hs-form-checkbox-display {
+.contact_form label.hs-form-checkbox-display {
     border-radius: 20px;
     line-height: 1.2;
     margin-bottom: 0;
@@ -374,7 +374,7 @@ label.hs-form-checkbox-display {
     height: 28px;
 }
 
-label.hs-form-checkbox-display.is-checked {
+.contact_form label.hs-form-checkbox-display.is-checked {
     border-color: rgba(var(--main-black-rgb),1);
     background-color: rgba(var(--main-black-rgb),1);
     color: #fff;
@@ -382,13 +382,13 @@ label.hs-form-checkbox-display.is-checked {
     font-family: var(--font-family-link);
 }
 
-label.hs-form-checkbox-display:hover {
+.contact_form label.hs-form-checkbox-display:hover {
     border-color: rgba(var(--main-black-rgb),1);
     background-color: rgba(var(--main-black-rgb),0.8);
     color: #fff;
 }
 
-.checkbox_wrap { 
+.contact_form.checkbox_wrap { 
     height: 1px;
     margin-bottom: 2rem;
     margin-top: 1.5rem;
@@ -411,7 +411,7 @@ label.plain-checkbox {
     clear: both;
 }
 
-.hs-button {
+.contact_form .hs-button {
     position: relative;
     z-index: 1;
     margin-left: 0;
@@ -426,7 +426,7 @@ label.plain-checkbox {
     background: #fff;
     /* color: #111; */
     border: none;
-    /* font-family: var(--font-family); */
+    font-family: var(--font-link);
     font-weight: 500;
     font-size: 16px;
     /* line-height: 1.5; */
@@ -445,28 +445,29 @@ label.plain-checkbox {
     background: var(--main-black);
     color: #fff;
 }
-.hs-button:hover {
+.contact_form .hs-button:hover {
     background: var(--black-hover);
     color: #fff;
 }
 
-.no-list.hs-error-msgs.inputs-list {
+.contact_form .no-list.hs-error-msgs.inputs-list {
     padding: 0;
     list-style: none;
     margin: 0.5rem 0;
 }
 
-.hs_interests [id*="label-interests"] span {
+.contact_form .hs_interests [id*="label-interests"] span {
     font-size: 20px;
     font-size: min(max(16px, 1.04vw), 20px);
-    font-family: var(--font-family-header);
+    font-family: var(--font-link);
 }
 
-input[type="checkbox"][id*="terms_and_conditions"] {
-    margin-right: 12px;
+.contact_form input[type="checkbox"][id*="terms_and_conditions"] {
+    margin-right: 8px;
+    transform: translateY(2px);
 }
 
-.no-list.hs-error-msgs.nputs-list li {
+.contact_form .no-list.hs-error-msgs.nputs-list li {
     
 }
-.hs-error-msg {}
+.contact_form .hs-error-msg {}

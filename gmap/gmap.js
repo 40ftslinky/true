@@ -34,9 +34,9 @@ url: "./gmap/marker.svg" // SITE/wp-content/themes/theme/library/gmap/marker.svg
 var contentString = '<div id="content">'+
   '<div id="siteNotice">'+
   '</div>'+
-  '<h1 id="firstHeading" class="firstHeading">-33.8311393</h1>'+
+  '<h1 id="firstHeading" class="firstHeading">True Sydney</h1>'+
   '<div id="bodyContent">'+
-  '<p>204/349 Pacific Hwy, North Sydney NSW 2060</p>'+
+  '<p>204/349 Pacific Hwy, <br>North Sydney NSW 2060</p>'+
   '<p><a href="https://www.google.com/maps/dir//True+Sydney,+204%2F349+Pacific+Hwy,+North+Sydney+NSW+2060/@-33.8311393,151.2014169,17z/data=!4m9!4m8!1m0!1m5!1m1!1s0x6b12aee94c302beb:0xf3b8a0c5d670ddcc!2m2!1d151.2036042!2d-33.8311369!3e0">Get directions</a></p>'+
   '</div>'+
   '</div>';

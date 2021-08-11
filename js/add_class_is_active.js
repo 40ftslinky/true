@@ -68,8 +68,8 @@ jQuery(document).ready(function( $ ) {
         $(".menu-icons").remove("is-active");
     });
 
-    
-    $(".btn-default input").click(function(){
+    // hubspot pill buttons
+    $(".contact_form label.hs-form-checkbox-display").click(function(){
         $(this).parent().toggleClass("is-checked");
         // $(this).checked = true;
 	});
