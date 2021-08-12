@@ -26,11 +26,18 @@
 .lime-txt:hover,
 .blue-txt:hover,
 .black-txt:hover { color:white; }
-
+/* 
 .pink-OL-txt:hover { color:var(--pink-hv); }
 .green-OL-txt:hover { color:var(--green-hv); }
 .lime-OL-txt:hover { color:var(--lime-hv); } 
-.blue-OL-txt:hover { color:var(--blue-hv); } 
+.blue-OL-txt:hover { color:var(--blue-hv); }  
+*/
+.pink-OL-txt:hover,
+.green-OL-txt:hover,
+.lime-OL-txt:hover,
+.blue-OL-txt:hover { color:var(--white); } 
+
+
 
 
 /*  =======================================
@@ -47,11 +54,12 @@
         white-space: nowrap;
         text-overflow: ellipsis;
         overflow: hidden;
-        padding: 8px 28px;
+        padding: 7px 28px;
         border-radius: 20px;
         background: #fff;
         /* color: #111; */
-        border: none;
+        border-style: solid;
+        border-width: 1px;
         /* font-family: var(--font-family); */
         font-weight: 500;
         font-size: 16px;
@@ -93,17 +101,22 @@
     .btn-white {
         background: #fff;
         /* color: #111; */
+        border: 1px solid var(--white);
     }
     .btn-white:hover {
-        background: var(--white-hover);
+        background: rgba(var(--white-rgb),0.2);
+        color: #fff;
+        border: 1px solid rgba(var(--white-rgb),0.5);
     }
     .btn-black {
         background: var(--main-black);
         color: #fff;
+        border: 1px solid var(--main-black);
     }
     .btn-black:hover {
-        background: var(--black-hover);
-        color: #fff;
+        background: var(--white);
+        color: var(--main-black);
+        border: 1px solid var(--black);
     }
     .btn-outline {
         background: #fff;
@@ -114,6 +127,7 @@
     .btn-outline:hover {
         background: var(--main-black);
         color: #fff;
+        border: 1px solid var(--main-black);
     }
     .btn-outline-white {
         background: transparent;
@@ -122,8 +136,11 @@
         padding: 7px 28px;
     }
     .btn-outline-white:hover {
-        background: var(--white-OL-hover);
+        background: rgba(var(--white-rgb),0.2);
         /* color: var(--main-black); */
+        color: #fff;
+        border: 1px solid rgba(var(--white-rgb),0.4);
+
     }
 
     @media screen and (max-width: 30em) {
@@ -136,4 +153,12 @@
 
     [class*="_text_wrap"] :not(.btns_wrap) .btn {
         margin: 1.5rem 0;
+    }
+
+    .btns_wrap {}
+
+    .btns_wrap .button:first-of-type,
+    .btns_wrap [class*="btn"]:first-of-type,
+    .btns_wrap button:first-of-type {
+        margin-right: 1rem;
     }

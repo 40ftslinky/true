@@ -88,6 +88,7 @@ h1, h2, h3 {
 /* 
 
 font-size: min(max(MOB*0.4px, DESK/1920vw), DESKpx);
+font-size: min(max(MOB*0.4px, DESK/1680vw), DESKpx);
 
 */
 
@@ -225,9 +226,9 @@ h4.grow_amount {
     content: '';
     background-size: contain;
     background-repeat: no-repeat;
-    margin-left: -50px;
+    margin-left: -43px;
     margin-top: -10px;
-    width:36px;
+    width:33px;
     height: 33px;
     position: absolute;
 }

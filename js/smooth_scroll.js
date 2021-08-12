@@ -1,5 +1,6 @@
 // Select all links with hashes
-$('a[href*="#"]')
+jQuery(document).ready(function( $ ) {
+  $('a[href*="#"]')
   // Remove links that don't actually link to anything
   .not('[href="#"]')
   .not('[href="#0"]')
@@ -19,7 +20,7 @@ $('a[href*="#"]')
         event.preventDefault();
         $('html, body').animate({
           scrollTop: target.offset().top
-        }, 1000, function() {
+        }, 0, function() {
           // Callback after animation
           // Must change focus!
           var $target = $(target);
@@ -34,3 +35,4 @@ $('a[href*="#"]')
       }
     }
   });
+});

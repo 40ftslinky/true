@@ -4,11 +4,9 @@ jQuery(document).ready(function( $ ) {
 
     $(".case_study_brand_wrap.state_off").fadeOut();
     $(".case_study_brand_wrap.state_off").css("visibility", "visible")
-    if ($(".case_study_brand_wrap.state_on")[0]){
-        // Do something if class exists
-    } else {
-        // Do something if class does not exist
-    }
+    // 
+    $("#subtitle2").hide();
+
 
     $(".swap_state_on").click(function(){
         $("div.state_on").fadeOut();

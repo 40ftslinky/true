@@ -20,7 +20,7 @@
 }
 .post-scrim {
     opacity: 0;
-    z-index: 111;
+    z-index: 1111;
     visibility: hidden;
     display: block;
     position: fixed;
@@ -49,7 +49,7 @@
     background-image: url('data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2220.574%22%20height%3D%2220.375%22%20viewBox%3D%220%200%2020.574%2020.375%22%3E %20%20%3Cpath%20d%3D%22M24511.518%2C4449.6l-7.73-7.646-7.73%2C7.646a1.5%2C1.5%2C0%2C0%2C1-1.057.431%2C1.5%2C1.5%2C0%2C0%2C1-1.053-2.566l7.707-7.621-7.707-7.624a1.5%2C1.5%2C0%2C1%2C1%2C2.109-2.129l7.73%2C7.644%2C7.73-7.644a1.5%2C1.5%2C0%2C1%2C1%2C2.111%2C2.129l-7.709%2C7.624%2C7.709%2C7.621a1.5%2C1.5%2C0%2C0%2C1-2.111%2C2.135Z%22%20transform%3D%22translate%28-24493.5%20-4429.66%29%22%20fill%3D%22%23fff%22%2F%3E %3C%2Fsvg%3E');
     background-size: cover;
     background-position: center center;
-    z-index:333;
+    z-index:3333;
     cursor: pointer;
     transition: all .25s ease;
     transform: rotate(0deg);
@@ -86,7 +86,7 @@
     top: 50%;
     /* transform: translate(-50%,-50%); */
     transform: translate(-50%,0);
-    z-index: 222;
+    z-index: 2222;
     padding: 1rem;
     margin: 2rem;
     /*  */
