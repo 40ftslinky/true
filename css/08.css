@@ -157,9 +157,17 @@
 
 .two_col_wide img.feature_img {
     width: 100%;
-    /* height: calc(60vh + 5%); */
     object-fit: cover;
     margin-left: -5%;
+}
+
+@media screen and (max-width: 48em) {
+    .two_col_wide img.feature_img {
+        width: 90%;
+        object-fit: cover;
+        margin-right: 5%;
+        margin-left: 5%;
+    }
 }
 
 .two_col_wide [class*="_text_wrap"] {
