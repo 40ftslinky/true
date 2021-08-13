@@ -106,8 +106,29 @@
         }
     }
 
+    #ss_content .col_feature {
+        position: relative;
+        width: 100%;
+    }
+
+    #ss_content .col_feature_wrap {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        gap:5%;
+    }
+
     #ss_content  [class*="_text_wrap"] {
         padding: 0;
+        width: 47.5%;
+    }
+    @media screen and (max-width: 1400px) {
+        #ss_content  [class*="_text_wrap"] {
+            padding: 0;
+            width: 100%;
+        }
+        
     }
 
     .two_col [class*="_text_wrap"] [class*="_title"]  {
