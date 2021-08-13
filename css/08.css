@@ -77,3 +77,102 @@
     width: 100%;
     aspect-ratio: 2 / 0.965;
 }
+
+/* ======================================= */
+
+/* 2col - wider image */
+
+#adv_two_col_wide {
+    margin: auto;
+    max-width: 100%;
+    width: 100%;
+    margin-bottom: 7.5%;
+}
+
+
+.two_col_wide {}
+
+
+.two_col_wide {
+    flex-direction: column;
+}
+.col_wrap {
+    flex-direction: row;
+}
+
+.two_col_wide .col_wrap.reverse {
+    flex-direction: row-reverse;
+}
+@media screen and (max-width: 48em) {
+    .col_wrap.reverse {
+        flex-direction: column;
+    }
+}    
+
+.two_col_wide .col_wrap {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 5%;
+}
+
+
+@media screen and (max-width: 48em) {
+    .two_col_wide .col_wrap {
+        flex-direction: column;
+    }
+}
+
+.two_col_wide .col_feature {
+    position: relative;
+    width: 100%;
+}
+@media screen and (max-width: 48em) {
+    .two_col_wide .col_feature {
+        margin-bottom: 7.5%;
+    }
+}
+
+.two_col_wide .col_feature {
+    width: 50%;
+}
+
+
+@media screen and (max-width: 48em) {
+    .two_col_wide .col_feature {
+        width: 100%;
+    }
+}
+
+.two_col_wide .col_feature_wrap {
+    position: relative;
+}
+
+.two_col_wide .col_wrap .col_feature_img_wrap{
+    width: 100%;
+    /* aspect-ratio: 1 / 1; */
+}
+
+
+.two_col_wide img.feature_img {
+    width: 100%;
+    /* height: calc(60vh + 5%); */
+    object-fit: cover;
+    margin-left: -5%;
+}
+
+.two_col_wide [class*="_text_wrap"] {
+    align-items: flex-start;
+    width: 60%;
+}
+
+@media screen and (max-width: 48em) {
+    .two_col_wide [class*="_text_wrap"] {
+        width: 100%;
+        max-width: 90vw;
+        margin: auto;
+    }
+}
+
+/* ------------------------------------ */
