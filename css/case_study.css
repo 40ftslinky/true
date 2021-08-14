@@ -1,0 +1,268 @@
+/* ========================================================================== */
+/* case_study.css */
+/* ========================================================================== */
+
+#case_study {}
+
+
+#case_study_header {
+    margin-top: var(--header-height);
+    height: 80vh;
+}
+.half_row {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5%;
+}
+
+#case_study .col_wrap {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 5%;
+    width:50%;
+}
+
+@media screen and (max-width: 48em) {
+    #case_study .col_wrap {
+        width:100%;
+    }
+}
+
+#case_study .col_feature {
+    display: flex;
+    flex-direction: column;
+    /* width: 100%; */
+}
+
+#case_study .col_feature_wrap {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    gap:5%;
+    /* width:100%; */
+}
+
+#case_study .case_study_text_wrap,
+#case_study [class*="_text_wrap"] {
+    position: relative;
+    width: 100%;
+    /* min-height: 60vh; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+
+
+#case_study h1, 
+#case_study h2, 
+#case_study h3, 
+#case_study h4, 
+#case_study p {
+    max-width: unset;
+    width: 100%;
+    text-align: left;
+    color: var(--main-black);
+}
+
+#case_study [class*="_title"] {}
+
+
+#case_study h1 {
+    font-size: 63px;
+    font-size: min(max(36px, 3.28vw), 63px);
+} 
+#case_study h2 {
+    font-size: 63px;
+    font-size: min(max(36px, 3.28vw), 63px);
+    /* font-size: 50px;
+    font-size: min(max(22px, 2.6vw), 50px); */
+} 
+#case_study h3 {
+    font-size: 50px;
+    font-size: min(max(22px, 2.6vw), 50px);
+    /* font-size: 40px;
+    font-size: min(max(24px, 2.08vw), 40px); */
+} 
+#case_study h4 {
+    font-size: 26px;
+    font-size: min(max(18px, 1.35vw), 26px);
+} 
+#case_study p {
+    min-height: unset;
+}
+
+@media screen and (max-width: 48em) {
+    #case_study .case_study_text_wrap h1, 
+    #case_study .case_study_text_wrap h2, 
+    #case_study .case_study_text_wrap h3, 
+    #case_study .case_study_text_wrap h4, 
+    #case_study .case_study_text_wrap p {
+        max-width: unset;
+        text-align: left;
+    }
+}
+
+ul.category_list {
+    list-style: none;
+    /* list-style-type: " / "; doesnt work for inline list */
+    margin-left: 0;
+    padding-left: 0;
+}
+
+.category_list li {
+    display: inline-block;
+}
+.category_list li::after {
+    content: ' / ';
+}
+.category_list li:last-of-type::before {
+    content: '';
+}
+
+/*  */
+
+#case_study #cs_video [class*="_text_wrap"] {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    position: absolute !important;
+    /* bottom: 0; */
+    padding-left: 30px;
+    padding-bottom: 30px;
+}
+
+/* ------------------------------------------------- */
+/* cs_img_grid grid */
+/* ------------------------------------------------- */
+
+.cs_img_grid_wrap {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1% 1%;
+}
+.cs_img_wrap {
+    min-width: unset;
+    margin-bottom: 1%;
+}
+.cs_img {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+}
+
+/* .one_grid */
+.one_grid .cs_img_wrap {
+    width: 100%;
+}
+.one_grid .cs_img_wrap .cs_img {
+    aspect-ratio: 16 / 9;
+}
+/* .two_grid */
+.two_grid .cs_img_wrap {
+    width: calc(100% / 2 - (1% / 2));
+}
+.two_grid .cs_img_wrap .cs_img {
+    aspect-ratio: 1 / 1;
+}
+
+/* .three_grid */
+.three_grid .cs_img_wrap {
+    width: calc(100% / 2 - (1% / 2));
+}
+.three_grid .cs_img_wrap:nth-of-type(3){
+    width: 100%;
+}
+.three_grid .cs_img_wrap:nth-of-type(1) .cs_img,
+.three_grid .cs_img_wrap:nth-of-type(2) .cs_img {
+    aspect-ratio: 4 / 3;
+}
+.three_grid .cs_img_wrap:nth-of-type(3) .cs_img {
+    aspect-ratio: 16 / 9;
+}
+/* .four_grid  */
+.four_grid .cs_img_wrap:nth-of-type(1),
+.four_grid .cs_img_wrap:nth-of-type(4) {
+    width: calc(100% * (3 / 5) - (1% / 2));
+}
+.four_grid .cs_img_wrap:nth-of-type(2),
+.four_grid .cs_img_wrap:nth-of-type(3) {
+    width: calc(100% * (2 / 5) - (1% / 2));
+}
+.four_grid .cs_img_wrap:nth-of-type(1) .cs_img,
+.four_grid .cs_img_wrap:nth-of-type(4) .cs_img {
+    aspect-ratio: 3 / 2;
+}
+.four_grid .cs_img_wrap:nth-of-type(2) .cs_img,
+.four_grid .cs_img_wrap:nth-of-type(3) .cs_img {
+    aspect-ratio: 1 / 1;
+}
+/* .five_grid */
+.five_grid .cs_img_wrap,
+.five_grid .cs_img_wrap:nth-of-type(5) {
+    width: calc(100% * (3 / 5) - (1% / 2));
+}
+.five_grid .cs_img_wrap:nth-of-type(2),
+.five_grid .cs_img_wrap:nth-of-type(4) {
+    width: calc(100% * (2 / 5) - (1% / 2));
+}
+.five_grid .cs_img_wrap:nth-of-type(3) {
+    width: 100%;
+}
+.five_grid .cs_img_wrap:nth-of-type(1) .cs_img,
+.five_grid .cs_img_wrap:nth-of-type(5) .cs_img {
+    aspect-ratio: 3 / 2;
+}
+.five_grid .cs_img_wrap:nth-of-type(3) .cs_img {
+    aspect-ratio: 16 / 9;
+}
+.five_grid .cs_img_wrap:nth-of-type(2) .cs_img,
+.five_grid .cs_img_wrap:nth-of-type(4) .cs_img {
+    aspect-ratio: 1 / 1;
+}
+
+/* .six_grid */
+.six_grid .cs_img_wrap:nth-of-type(1){
+    width: calc(100% * (3 / 5) - (1% / 2));
+}
+.six_grid .cs_img_wrap:nth-of-type(2) {
+    width: calc(100% * (2 / 5) - (1% / 2));
+}
+.six_grid .cs_img_wrap:nth-of-type(3) {
+    width: 100%;
+}
+.six_grid .cs_img_wrap:nth-of-type(4),
+.six_grid .cs_img_wrap:nth-of-type(5),
+.six_grid .cs_img_wrap:nth-of-type(6) {
+    width: calc(100% * (1 / 3) - (1% / 1));
+}
+
+.six_grid .cs_img_wrap:nth-of-type(1) .cs_img {
+    aspect-ratio: 3 / 2;
+}
+.six_grid .cs_img_wrap:nth-of-type(3) .cs_img {
+    aspect-ratio: 16 / 9;
+}
+.six_grid .cs_img_wrap:nth-of-type(2) .cs_img,
+.six_grid .cs_img_wrap:nth-of-type(4) .cs_img,
+.six_grid .cs_img_wrap:nth-of-type(5) .cs_img,
+.six_grid .cs_img_wrap:nth-of-type(6) .cs_img {
+    aspect-ratio: 1 / 1;
+}
+
+@media screen and (max-width: 36em) {
+    .cs_img_wrap {
+        width: 100%;
+    }
+}
