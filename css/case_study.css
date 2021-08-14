@@ -141,6 +141,10 @@ ul.category_list {
     padding-bottom: 30px;
 }
 
+#case_study #cs_video a:hover img {
+    opacity: 0.8;
+}
+
 /* ------------------------------------------------- */
 /* cs_img_grid grid */
 /* ------------------------------------------------- */
